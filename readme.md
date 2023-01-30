@@ -1,0 +1,2 @@
+# totalizador-de-resumo-mensal-de-prn-ii
+Serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos) totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde).
