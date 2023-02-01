@@ -5,17 +5,45 @@ input {
 }
 
 input:focus {
-    border-bottom: 2px solid var(--primary-color) !important;
+    border-bottom: 2px solid var(--anchor-color) !important;
 }
+
+input[readonly]:focus {
+    border-bottom: 1px solid var(--border-color) !important;
+}
+
 /* Container */
 :root {
-    --max-width: 998px;
+    --max-width: 850px;
 }
 
 div.container {
-    max-width: var(--max-width);
+    width: var(--max-width);
     margin: 30px auto 15px auto;
     font-size: 13px;
+}
+
+/* CSSS REUTILIZÁVEL */
+header div.grid-7 span,
+div.grid-1 span,
+div.body div.grid-8 span {
+    border-left: 2px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+div.ficha header div.col1,
+div.grid-1 span,
+div.body div.grid-8 input:last-child {
+    border-right: 2px solid var(--border-color);
+}
+
+div.emblema-e-republica,
+div.geo div.flex-container, 
+header div.grid-7 span,
+div.body div.grid-8 span,
+div.body div.col2 span, div.grid-1 span {
+    display: flex;
+    align-items: center;
 }
 
 /* CABECALHO */
@@ -26,9 +54,7 @@ header h1 {
 }
 
 div.emblema-e-republica {
-    display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 div.republica {
@@ -49,8 +75,6 @@ div.geo {
 }
 
 div.geo div.flex-container {
-    display: flex;
-    align-items: center;
     min-height: 20px;
 }
 
@@ -73,20 +97,19 @@ div.ficha input[type=number] {
 div.ficha header,
 div.ficha div.body {
     display: grid;
-    grid-template-columns: 750px 110px;
+    grid-template-columns: 720px 110px;;
     grid-column-gap: 20px;
     justify-content: center;
 }
 
 div.ficha header {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 div.ficha header div.col1 {
     background-color: var(--gray-d);
     display: grid;
     grid-template-rows: 24px 48px;
-    border-right: 2px solid var(--border-color);
 }
 
 div.ficha header div.col2 {
@@ -103,48 +126,32 @@ header div.col2 span {
 
 header div.grid-7 {
     display: grid;
-    grid-template-columns: calc(45px + 225px) repeat(6, 80px);
+    grid-template-columns: calc(40px + 230px) repeat(6, 75px);
 }
 
 header div.grid-7 span {
     font-weight: bold;
-    border-left: 2px solid var(--border-color);
     border-top: 2px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 div.grid-1 span {
     font-weight: bold;
-    display: flex;
-    align-items: center;
     min-height: 100%;
     padding-left: 6px;
-    border-left: 2px solid var(--border-color);
-    border-bottom: 1px solid var(--border-color);
-    border-right: 2px solid var(--border-color);   
 }
 
 /* CORPO DA FICHA */
 
 div.body div.grid-8,
 div.body div.grid-1 {
-    max-width: 750px;
+    max-width: 720px;
 }
 
 div.body div.grid-8 {
     display: grid;
-    grid-template-columns: 45px 225px repeat(6, 80px);
-    grid-template-rows: 60px;
-}
-
-div.body div.grid-8 span {
-    border-left: 2px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--border-color);
+    grid-template-columns: 40px 230px repeat(6, 75px);
+    grid-template-rows: 55px;
 }
 
 div.body div.grid-8 span.nao-aplicavel {
@@ -166,13 +173,9 @@ div.body div.grid-8 input {
     border-left: 2px solid var(--border-color);
 }
 
-div.body div.grid-8 input:last-child {
-    border-right: 2px solid var(--border-color);
-}
-
 div.body div.grid-1 {
     display: grid;
-    grid-template-rows: 35px;
+    grid-template-rows: 30px;
 }
 
 div.body div.grid-8.total,
@@ -200,17 +203,15 @@ div.body div.grid-8.total.de-transicoes input {
 
 div.body div.col2 {
     display: grid;
-    grid-template-rows: 60px 35px repeat(5, 60px) 35px repeat(7, 60px);
+    grid-template-rows: 55px 30px repeat(5, 55px) 30px repeat(7, 55px);
 }
 
 div.body div.col2 span {
-    border-bottom: 1px solid var(--border-color);
     font-weight: bold;
-    display: flex;
     justify-content: center;
-    align-items: center;
     border-left: 1px solid var(--border-color);
     border-right: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 
@@ -221,11 +222,10 @@ div.body div.col2 span.fundo-cinza {
 /* Rodape da ficha */
 
 footer.linha-de-assinatura {
-    max-width: 880px;
-    margin: 30px auto 15px auto;
+    margin: 25px auto 15px auto;
     padding: 0 8px;
     display: grid;
-    grid-template-columns: 262px 602px;
+    grid-template-columns: 262px 572px;
     min-height: 20px;
 }
 
@@ -234,7 +234,7 @@ footer.linha-de-assinatura input {
 }
 
 footer.linha-de-assinatura input#assinatura {
-    width: 365px;
+    width: 340px;
 }
 
-div.nota{width:var(--max-width);margin-bottom:20px;min-height:79px;display:flex;justify-content:center;}@-moz-document url-prefix(){div.nota{min-height:96px}}@media screen and (max-width:998px){div.linha.nota{padding-left:0;padding-right:0}}div.nota textarea{font-family:san-serif,Arial,Helvetica;width:868px;padding:5px;line-height:1.5;border:1px solid var(--border-color)}@media print{div.col1.emblema-e-republica,div.container{visibility:visible}div.nota.no-print{display:none}div.nota textarea{padding:0}}div.nota textarea.bold{font-weight:700;border-color:transparent}div.nota textarea:focus{border:2px solid var(--blue)}
+div.nota{width:var(--max-width);margin-bottom:20px;min-height:79px;display:flex;justify-content:center;}@-moz-document url-prefix(){div.nota{min-height:96px}}@media screen and (max-width:835px){div.linha.nota{padding-left:0;padding-right:0}}div.nota textarea{font-family:san-serif,Arial,Helvetica;width:868px;padding:5px;line-height:1.5;border:1px solid var(--border-color)}@media print{div.col1.emblema-e-republica,div.container{visibility:visible;}div.nota.no-print{display:none}div.nota textarea{padding:0}}div.nota textarea.bold{font-weight:700;border-color:transparent}div.nota textarea:focus{border:2px solid var(--blue)}

@@ -10,10 +10,10 @@
     <meta name="author" content="Adérito Félix Quinamine"/>
 
     <!-- Partilha nas redes sociais -->
-    <meta property="og:url" content="https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/index.html" />
+    <meta property="og:url" content="https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/index.html" />
     <meta property="og:title" content="Totalizador de Resumo Mensal de PRN II" />
     <meta property="og:description" content="Serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde)." />
-    <meta property="og:image" content="https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/imagens/totalizador-de-resumo-mensal-de-malaria.png" />
+    <meta property="og:image" content="https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/imagens/totalizador-de-resumo-mensal-de-prn-ii.png" />
 
     <!-- Design -->
     <link href=favicon.ico rel="shortcut icon"type=image/x-icon />
@@ -25,7 +25,7 @@
     <!-- Scripts -->
     <script src=fisiologia/menu.js></script>
     <script src=fisiologia/inputvalidation.js></script>
-    <script src=fisiologia/totalizador-rmmalaria.js></script>
+    <script src=fisiologia/totalizador-rmprnii.js></script>
     <script src=fisiologia/webstorage.js></script>
 
     <!-- Google tag (gtag.js) -->
@@ -45,7 +45,7 @@
     <header>
         <div class="linha do-cabecalho">
             <a href=index.html class=logo>
-                Totalizador de Resumo <span>Mensal</span> de PRN II
+                Totalizador de Resumo <span>Mensal</span> de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr>
             </a>
 
             <section class=menu role=navigation><ul>
@@ -53,7 +53,7 @@
                     <input type=checkbox id=readonlyinputs-darker> 
                     <label for=readonlyinputs-darker>Destacar&nbsp;o&nbsp;fundo&nbsp;dos&nbsp;totais</label>
                 <li title="Limpar os dados da ficha">
-                    <button class=esvaziar-ficha>Esvaziar a ficha</button>
+                    <button class=esvaziar-ficha>Esvaziar <span class="hide-on-desk">a ficha</span></button>
                 <li title="Imprimir a ficha"class=impressao>
                     <button class=imprimir>Imprimir</button>
                 <li title=Tutorial>
@@ -67,7 +67,7 @@
     </header>
                            
     <main class="linha">
-        <div class=container>
+        <div class="container">
             <header>
                 <div class="col1 emblema-e-republica">
                     <figure><img alt="Emblema da República de Moçambique" src=imagens/emblema.png>
@@ -78,11 +78,11 @@
                     </div>
                 </div>
 
-                <h1>Resumo Mensal do PRN para Pacientes &ge; 15 Anos</h1>
+                <h1>Resumo Mensal do <abbr title="Programa de Reabilitação Nutricional">PRN</abbr> para Pacientes &ge; 15 Anos</h1>
 
                 <div class=geo>
                     <div class="flex-container">
-                        <label for=provincia>Província&nbsp;de</label> 
+                        <label for=provincia>Província</label> 
                         <input id=provincia>
                     </div>
                     <div class="flex-container">
@@ -91,7 +91,7 @@
                     </div>
                     
                     <div class="flex-container">  
-                        <label for=distrito>Distrito&nbsp;de</label> 
+                        <label for=distrito>Distrito</label> 
                         <input id=distrito>
                     </div>
                     <div class="flex-container">
@@ -127,12 +127,12 @@
                         <div class="grid-8">
                             <span>A</span>
                             <span>Nº de pacientes que transitaram do <br/>mês anterior para este mês </span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="a-c1c2c3c4c5" data-totaleixoxoutput="a-c6"/>
+                            <input type="number" min="0" data-totaleixox="a-c1c2c3c4c5" data-totaleixoxoutput="a-c6"/>
+                            <input type="number" min="0" data-totaleixox="a-c1c2c3c4c5" data-totaleixoxoutput="a-c6"/>
+                            <input type="number" min="0" data-totaleixox="a-c1c2c3c4c5" data-totaleixoxoutput="a-c6"/>
+                            <input type="number" min="0" data-totaleixox="a-c1c2c3c4c5" data-totaleixoxoutput="a-c6"/>
+                            <input type="number" min="0" readonly class="a-c6"/>
                         </div>
                         <div class="grid-1">
                             <span>ADMISSÕES (B)</span>
@@ -142,12 +142,12 @@
                         <div class="grid-8">
                             <span>B1</span>
                             <span>Nº de pacientes admitidos com <br/> desnutrição aguda moderada <br/> (DAM) com HIV+ e/ou TB</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="b1-c1c2c3c4c5" data-totaleixoxoutput="b1-c6" data-totaleixoy="b1b2b3b4-c1" data-totaleixoyoutput="b5-c1" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b1-c1c2c3c4c5" data-totaleixoxoutput="b1-c6" data-totaleixoy="b1b2b3b4-c2" data-totaleixoyoutput="b5-c2" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b1-c1c2c3c4c5" data-totaleixoxoutput="b1-c6" data-totaleixoy="b1b2b3b4-c3" data-totaleixoyoutput="b5-c3" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b1-c1c2c3c4c5" data-totaleixoxoutput="b1-c6" data-totaleixoy="b1b2b3b4-c4" data-totaleixoyoutput="b5-c4" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b1-c1c2c3c4c5" data-totaleixoxoutput="b1-c6" data-totaleixoy="b1b2b3b4-c5" data-totaleixoyoutput="b5-c5" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" readonly class="b1-c6"/>
                         </div>
     
                         <div class="grid-8">
@@ -155,43 +155,43 @@
                             <span>Nº de pacientes admitidos com <br/> desnutrição aguda moderada <br/> (DAM) com HIV- ou desconhecido</span>
                             <span class="nao-aplicavel"></span>
                             <span class="nao-aplicavel"></span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
+                            <input type="number" min="0" data-totaleixox="b2-c1c2c3c4c5" data-totaleixoxoutput="b2-c6" data-totaleixoy="b1b2b3b4-c3" data-totaleixoyoutput="b5-c3" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b2-c1c2c3c4c5" data-totaleixoxoutput="b2-c6" data-totaleixoy="b1b2b3b4-c4" data-totaleixoyoutput="b5-c4" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
                             <span class="nao-aplicavel"></span>
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" readonly class="b2-c6"/>
                         </div>
     
                         <div class="grid-8">
                             <span>B3</span>
                             <span>Nº de pacientes admitidos com <br/> desnutrição aguda grave (DAG) <br/> com HIV+</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="b3-c1c2c3c4c5" data-totaleixoxoutput="b3-c6" data-totaleixoy="b1b2b3b4-c1" data-totaleixoyoutput="b5-c1" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b3-c1c2c3c4c5" data-totaleixoxoutput="b3-c6" data-totaleixoy="b1b2b3b4-c2" data-totaleixoyoutput="b5-c2" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b3-c1c2c3c4c5" data-totaleixoxoutput="b3-c6" data-totaleixoy="b1b2b3b4-c3" data-totaleixoyoutput="b5-c3" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b3-c1c2c3c4c5" data-totaleixoxoutput="b3-c6" data-totaleixoy="b1b2b3b4-c4" data-totaleixoyoutput="b5-c4" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b3-c1c2c3c4c5" data-totaleixoxoutput="b3-c6" data-totaleixoy="b1b2b3b4-c5" data-totaleixoyoutput="b5-c5" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" readonly class="b3-c6"/>
                         </div>
     
                         <div class="grid-8">
                             <span>B4</span>
                             <span>Nº de pacientes admitidos com <br/> desnutrição aguda grave (DAG) <br/> com HIV- ou desconhecido</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
+                            <input type="number" min="0" data-totaleixox="b4-c1c2c3c4c5" data-totaleixoxoutput="b4-c6" data-totaleixoy="b1b2b3b4-c1" data-totaleixoyoutput="b5-c1" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b4-c1c2c3c4c5" data-totaleixoxoutput="b4-c6" data-totaleixoy="b1b2b3b4-c2" data-totaleixoyoutput="b5-c2" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b4-c1c2c3c4c5" data-totaleixoxoutput="b4-c6" data-totaleixoy="b1b2b3b4-c3" data-totaleixoyoutput="b5-c3" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
+                            <input type="number" min="0" data-totaleixox="b4-c1c2c3c4c5" data-totaleixoxoutput="b4-c6" data-totaleixoy="b1b2b3b4-c4" data-totaleixoyoutput="b5-c4" data-totaldeadmissoesc6="b1b2b3b4-c1c2c3c4c5" data-totaldeadmissoesc6output="b5-c6"/>
                             <span class="nao-aplicavel"></span>
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" readonly class="b4-c6"/>
                         </div>
     
                         <!-- Total de Admissoes -->
                         <div class="grid-8 total de-admissoes">
                             <span>Total Admissões (B1+B2+B3+B4)</span>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" readonly class="b5-c1"/>
+                            <input type="number" min="0" readonly class="b5-c2"/>
+                            <input type="number" min="0" readonly class="b5-c3"/>
+                            <input type="number" min="0" readonly class="b5-c4"/>
+                            <input type="number" min="0" readonly class="b5-c5"/>
+                            <input type="number" min="0" readonly class="b5-c6"/>
                         </div>
     
                         <!-- Altas -->
@@ -202,70 +202,70 @@
                         <div class="grid-8">
                             <span>C1</span>
                             <span>Nº de pacientes curados</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="lc1-c1c2c3c4c5" data-totaleixoxoutput="lc1-c6" data-totaleixoy="lc1c2c3c4c5-c1" data-totaleixoyoutput="lc6-c1" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc1-c1c2c3c4c5" data-totaleixoxoutput="lc1-c6" data-totaleixoy="lc1c2c3c4c5-c2" data-totaleixoyoutput="lc6-c2" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc1-c1c2c3c4c5" data-totaleixoxoutput="lc1-c6" data-totaleixoy="lc1c2c3c4c5-c3" data-totaleixoyoutput="lc6-c3" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc1-c1c2c3c4c5" data-totaleixoxoutput="lc1-c6" data-totaleixoy="lc1c2c3c4c5-c4" data-totaleixoyoutput="lc6-c4" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc1-c1c2c3c4c5" data-totaleixoxoutput="lc1-c6" data-totaleixoy="lc1c2c3c4c5-c5" data-totaleixoyoutput="lc6-c5" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" readonly class="lc1-c6"/>
                         </div>
                         
                         <div class="grid-8">
                             <span>C2</span>
                             <span>Nº de pacientes que abandonaram <br/> o tratamento</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="lc2-c1c2c3c4c5" data-totaleixoxoutput="lc2-c6" data-totaleixoy="lc1c2c3c4c5-c1" data-totaleixoyoutput="lc6-c1" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc2-c1c2c3c4c5" data-totaleixoxoutput="lc2-c6" data-totaleixoy="lc1c2c3c4c5-c2" data-totaleixoyoutput="lc6-c2" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc2-c1c2c3c4c5" data-totaleixoxoutput="lc2-c6" data-totaleixoy="lc1c2c3c4c5-c3" data-totaleixoyoutput="lc6-c3" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc2-c1c2c3c4c5" data-totaleixoxoutput="lc2-c6" data-totaleixoy="lc1c2c3c4c5-c4" data-totaleixoyoutput="lc6-c4" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc2-c1c2c3c4c5" data-totaleixoxoutput="lc2-c6" data-totaleixoy="lc1c2c3c4c5-c5" data-totaleixoyoutput="lc6-c5" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" readonly class="lc2-c6"/>
                         </div>
                         
                         <div class="grid-8">
                             <span>C3</span>
                             <span>Nº de óbitos</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="lc3-c1c2c3c4c5" data-totaleixoxoutput="lc3-c6" data-totaleixoy="lc1c2c3c4c5-c1" data-totaleixoyoutput="lc6-c1" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc3-c1c2c3c4c5" data-totaleixoxoutput="lc3-c6" data-totaleixoy="lc1c2c3c4c5-c2" data-totaleixoyoutput="lc6-c2" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc3-c1c2c3c4c5" data-totaleixoxoutput="lc3-c6" data-totaleixoy="lc1c2c3c4c5-c3" data-totaleixoyoutput="lc6-c3" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc3-c1c2c3c4c5" data-totaleixoxoutput="lc3-c6" data-totaleixoy="lc1c2c3c4c5-c4" data-totaleixoyoutput="lc6-c4" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc3-c1c2c3c4c5" data-totaleixoxoutput="lc3-c6" data-totaleixoy="lc1c2c3c4c5-c5" data-totaleixoyoutput="lc6-c5" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" readonly class="lc3-c6"/>
                         </div>
                         
                         <div class="grid-8">
                             <span>C4</span>
                             <span>Nº de pacientes referidos para o <br/>TDI</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="lc4-c1c2c3c4c5" data-totaleixoxoutput="lc4-c6" data-totaleixoy="lc1c2c3c4c5-c1" data-totaleixoyoutput="lc6-c1" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc4-c1c2c3c4c5" data-totaleixoxoutput="lc4-c6" data-totaleixoy="lc1c2c3c4c5-c2" data-totaleixoyoutput="lc6-c2" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc4-c1c2c3c4c5" data-totaleixoxoutput="lc4-c6" data-totaleixoy="lc1c2c3c4c5-c3" data-totaleixoyoutput="lc6-c3" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc4-c1c2c3c4c5" data-totaleixoxoutput="lc4-c6" data-totaleixoy="lc1c2c3c4c5-c4" data-totaleixoyoutput="lc6-c4" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc4-c1c2c3c4c5" data-totaleixoxoutput="lc4-c6" data-totaleixoy="lc1c2c3c4c5-c5" data-totaleixoyoutput="lc6-c5" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" readonly class="lc4-c6"/>
                         </div>
                         
                         <div class="grid-8">
                             <span>C5</span>
                             <span>Nº de pacientes transferidos para <br/> outro sector ou US</span>
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" />
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" data-totaleixox="lc5-c1c2c3c4c5" data-totaleixoxoutput="lc5-c6" data-totaleixoy="lc1c2c3c4c5-c1" data-totaleixoyoutput="lc6-c1" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc5-c1c2c3c4c5" data-totaleixoxoutput="lc5-c6" data-totaleixoy="lc1c2c3c4c5-c2" data-totaleixoyoutput="lc6-c2" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc5-c1c2c3c4c5" data-totaleixoxoutput="lc5-c6" data-totaleixoy="lc1c2c3c4c5-c3" data-totaleixoyoutput="lc6-c3" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc5-c1c2c3c4c5" data-totaleixoxoutput="lc5-c6" data-totaleixoy="lc1c2c3c4c5-c4" data-totaleixoyoutput="lc6-c4" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" data-totaleixox="lc5-c1c2c3c4c5" data-totaleixoxoutput="lc5-c6" data-totaleixoy="lc1c2c3c4c5-c5" data-totaleixoyoutput="lc6-c5" data-totaldeadmissoesc6="lc1c2c3c4c5-c1c2c3c4c5" data-totaldeadmissoesc6output="lc6-c6"/>
+                            <input type="number" min="0" readonly class="lc5-c6"/>
                         </div>
     
                         <!-- Total de Altas -->
                         <div class="grid-8 total de-altas">
                             <span>Total Altas (C1+C2+C3+C4+C5)</span>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
-                            <input type="number" min="0" readonly/>
+                            <input type="number" min="0" readonly class="lc6-c1"/>
+                            <input type="number" min="0" readonly class="lc6-c2"/>
+                            <input type="number" min="0" readonly class="lc6-c3"/>
+                            <input type="number" min="0" readonly class="lc6-c4"/>
+                            <input type="number" min="0" readonly class="lc6-c5"/>
+                            <input type="number" min="0" readonly class="lc6-c6"/>
                         </div>
     
-                        <!-- Total de Altas -->
+                        <!-- Total de transicoes -->
                         <div class="grid-8 total de-transicoes">
                             <span>Nº de pacientes que transitam para o <br/> mês seguinte (A+B-C)</span>
                             <input type="number" min="0" readonly/>
@@ -307,10 +307,10 @@
                     </div>
                 </footer>
             </div>
+            <div class="linha nota"><textarea id=nota placeholder="Adicionar uma nota..."rows=3></textarea></div>
         </div>
-
-        <div class="linha nota"><textarea id=nota placeholder="Adicionar uma nota..."rows=3></textarea></div><aside class=manipulacao-do-menu><div class=pesquisa><div class=caixa-de-pesquisa><input type=number min=1 class=pesquisar-linha max=63 placeholder="Introduza o número da linha"> <button class=fechar title=Fechar>×</button></div><div class="caixa-de-alerta query-out-of-range"><p><b class=entered-num></b> não corresponde à nenhuma linha. A ficha tem no máximo 73 linhas a partir de 1.</p><button>OK</button></div></div><div class=esvaziamento><div class=caixa-de-confirmacao><h3>Esvaziar a ficha</h3><p>Tem certeza de que pretende esvaziar a ficha?<div class=alerta><svg style=width:40px;height:40px><linearGradient id=meuGradiente x1=0% x2=0% y1=0% y2=100%><stop offset=0% style=stop-color:gray></stop><stop offset=100% style=stop-color:#ff0></stop></linearGradient><polygon fill=url(#meuGradiente) points="20,0 40,40, 0,40"stroke=#333 stroke-width=1></polygon><text style=font-weight:700;font-size:28px x=15.335 y=35.5>!</text></svg><p>Esta acção não pode ser desfeita.</div><h4>Dados adicionais</h4><ul class=limpadores-de-dados-adicionais><li><input type=checkbox id=nome-da-provincia checked data-for=provincia> <label for=nome-da-provincia>Província</label><li><input type=checkbox id=nome-do-distrito checked data-for=distrito> <label for=nome-do-distrito>Distrito</label><li><input type=checkbox id=nome-da-us checked data-for=us> <label for=nome-da-us>Unidade Sanitária</label><li><input type=checkbox id=month checked data-for=mes> <label for=month>Mês</label><li><input type=checkbox id=ano-de-elaboracao checked data-for=ano> <label for=ano-de-elaboracao>Ano</label><li><input type=checkbox id=nome-do-compilador checked data-for=assinatura> <label for=nome-do-compilador>Nome do Responsável pela<br>elaboração</label><li><input type=checkbox id=data-de-elaboracao checked data-for=data> <label for=data-de-elaboracao>Data de elaboração</label><li><input type=checkbox id=nota-do-resumo checked data-for=nota> <label for=nota-do-resumo>Nota do resumo</label></ul><div class=botoes-de-confirmacao><button class=cancelar>Cancelar</button> <button class=confirmar>Confirmar</button></div></div><div class="caixa-de-alerta ficha-vazia"><p>A ficha não está preenchida.</p><button>OK</button></div></div><div class="caixa-de-alerta restricao-de-acesso-celular"><p>As células dos totais têm o acesso interdito para assegurar que os seus valores não sejam acidentalmente modificados.</p><button>OK</button></div><div class="caixa-de-alerta indicador-nao-aplicavel"><p>Indicador não aplicável para o sexo <span class=sexo-output></span>.</p><button>OK</button></div><div class=razao-pelas-celulas-com-fundo-vermelho><h2>Por que algumas células ficaram com o fundo vermelho?</h2><p class="destaque obs">Toda célula cujo fundo está vermelho tem um ou mais algarismos omissos por indisponibilidade de espaço na respectiva célula.<p>As células de entrada de dados do totalizador têm uma largura para 9 algarismos no máximo, portanto, só podem mostrar valores até <strong>999 999 999</strong>. A partir de 1 000 000 000, ficam visíveis somente os primeiros 9 algarismos e do 10º em diante, ficam fora da área visível da célula.<p class="destaque suposicao">Presumo que actualmente (2023) não haja uma Unidade Sanitária em Moçambique com um número de consultas maior que 999 999 999.<div class=seccao-de-interatividade><div><input type=checkbox id=nao-mostrar-mais> <label for=nao-mostrar-mais>Não volte a mostrar esta mensagem</label></div><button class=close-redcels-obs>Fechar</button></div></div><div class=aviso-de-uso-de-cookies><p>Ao utilizar o Totalizador de Resumo Mensal de PRN II, o usuário concorda com o armazenamento local de dados, a fim de melhorar a sua experiência de utilização. <button class=abrir-artigo-cookies>Saiba mais...</button></p><button class=aceitar-cookies>Prosseguir</button></div></aside>
+        <aside class=manipulacao-do-menu><div class=pesquisa><div class=caixa-de-pesquisa><input type=number min=1 class=pesquisar-linha max=63 placeholder="Introduza o número da linha"> <button class=fechar title=Fechar>×</button></div><div class="caixa-de-alerta query-out-of-range"><p><b class=entered-num></b> não corresponde à nenhuma linha. A ficha tem no máximo 73 linhas a partir de 1.</p><button>OK</button></div></div><div class=esvaziamento><div class=caixa-de-confirmacao><h3>Esvaziar a ficha</h3><p>Tem certeza de que pretende esvaziar a ficha?<div class=alerta><svg style=width:40px;height:40px><linearGradient id=meuGradiente x1=0% x2=0% y1=0% y2=100%><stop offset=0% style=stop-color:gray></stop><stop offset=100% style=stop-color:#ff0></stop></linearGradient><polygon fill=url(#meuGradiente) points="20,0 40,40, 0,40"stroke=#333 stroke-width=1></polygon><text style=font-weight:700;font-size:28px x=15.335 y=35.5>!</text></svg><p>Esta acção não pode ser desfeita.</div><h4>Dados adicionais</h4><ul class=limpadores-de-dados-adicionais><li><input type=checkbox id=nome-da-provincia checked data-for=provincia> <label for=nome-da-provincia>Província</label><li><input type=checkbox id=nome-do-distrito checked data-for=distrito> <label for=nome-do-distrito>Distrito</label><li><input type=checkbox id=nome-da-us checked data-for=us> <label for=nome-da-us>US</label><li><input type=checkbox id=month checked data-for=mes> <label for=month>Mês</label><li><input type=checkbox id=data-de-elaboracao checked data-for=data> <label for=data-de-elaboracao>Data de elaboração</label><li><input type=checkbox id=nome-do-compilador checked data-for=assinatura> <label for=nome-do-compilador>Assinatura do Responsável <br/> pelo Sector</label><li><input type=checkbox id=nota-do-resumo checked data-for=nota> <label for=nota-do-resumo>Nota do resumo</label></ul><div class=botoes-de-confirmacao><button class=cancelar>Cancelar</button> <button class=confirmar>Confirmar</button></div></div><div class="caixa-de-alerta ficha-vazia"><p>A ficha não está preenchida.</p><button>OK</button></div></div><div class="caixa-de-alerta restricao-de-acesso-celular"><p>As células dos totais têm o acesso interdito para assegurar que os seus valores não sejam acidentalmente modificados.</p><button>OK</button></div><div class="caixa-de-alerta indicador-nao-aplicavel"><p>Indicador não aplicável para o sexo <span class=sexo-output></span>.</p><button>OK</button></div><div class=razao-pelas-celulas-com-fundo-vermelho><h2>Por que algumas células ficaram com o fundo vermelho?</h2><p class="destaque obs">Toda célula cujo fundo está vermelho tem um ou mais algarismos omissos por indisponibilidade de espaço na respectiva célula.<p>As células de entrada de dados do totalizador têm uma largura para 9 algarismos no máximo, portanto, só podem mostrar valores até <strong>999 999 999</strong>. A partir de 1 000 000 000, ficam visíveis somente os primeiros 9 algarismos e do 10º em diante, ficam fora da área visível da célula.<p class="destaque suposicao">Presumo que actualmente (2023) não haja uma Unidade Sanitária em Moçambique com um número de consultas maior que 999 999 999.<div class=seccao-de-interatividade><div><input type=checkbox id=nao-mostrar-mais> <label for=nao-mostrar-mais>Não volte a mostrar esta mensagem</label></div><button class=close-redcels-obs>Fechar</button></div></div><div class=aviso-de-uso-de-cookies><p>Ao utilizar o Totalizador de Resumo Mensal de PRN II, o usuário concorda com o armazenamento local de dados, a fim de melhorar a sua experiência de utilização. <button class=abrir-artigo-cookies>Saiba mais...</button></p><button class=aceitar-cookies>Prosseguir</button></div></aside>
     </main>
-        <article><section id=sobre><h1>Sobre o totalizador</h1><figure><img alt="Totalizador de Resumo Mensal de PRN II"src=imagens/totalizador-de-resumo-mensal-de-malaria.png></figure><p>O <b>Totalizador de Resumo Mensal de PRN II</b> é um serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos) totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde). A sua estrutura é baseada na da ficha de resumo mensal de PRN II actualmente (2023) vigente no Serviço Nacional de Saúde em Moçambique.<p>O propósito é de flexibilizar a elaboração do resumo através do cálculo automático dos totais.<p>O Totalizador de Resumo Mensal de PRN II reúne os seguintes recursos:<ul><li>Calcula e autopreenche as células dos totais;<li>Fornece resultados verdadeiros;<li>Flexibiliza a elaboração do resumo;<li>Salva os dados no navegador do usuário até este excluí-los;<li>Pode ser impresso.</ul><button class=fechar-artigo title=Fechar>×</button></section><section id=cookies><h1>Política de Armazenamento de dados</h1><p><b>Web Storage</b> é um recurso para armazenamento local (no navegador do usuário) de informações por meio de pequenos arquivos de texto, útil para guardar predefinições.<p class=mb-10>Existem 2 tipos de Web Storage:<ul><li><b>Session Storage (Armazenamento de Sessão)</b> – elimina os dados gravados quando a janela da página é fechada.<li><b>Local Storage (Armazenamento Local)</b> – mantém os dados salvos por um período determinado ou até que o usuário exclua.</ul><p>O Totalizador de Resumo Mensal de PRN II utiliza o primeiro para guardar o consentimento do usuário à Política de Armazenamento e o último pelas razões do subtítulo a seguir.<h2>Por que armazeno dados?</h2><p class=mb-10>Por 3 razões, enumeradamente:<dl><dt id=um>Fazer um backup local<dd class=mb-10>Fazer uma cópia de segurança dos dados da ficha no navegador do usuário. Se forem preenchidos, os dados que são salvos incluem:</dd><ul><li><b>Os dados da ficha propriamente dita.</b><li><b>Dados adicionais como:</b><ul><li>Província;<li>Distrito;<li>Unidade Sanitária;<li>Mês;<li>Data de elaboração;<li>Nome do Responsável pelo compilamento;<li>Assinatura do Responsável pelo compilamento;<li>Nota do resumo.</ul></ul><dt id=dois>Durabilidade dos dados<dd>Manter salvos os dados previamente inseridos no acto de preenchimento da ficha por tempo suficiente para serem aproveitáveis. Isso é importante, pois possibilita o Profissional interromper sem o risco de voltar à estaca zero, a elaboração do resumo para continuar num outro momento oportuno, sobretudo se ainda lhe faltar dados de alguns indicadores para preencher nas respectivas células da ficha.<dt id=tres>Salvar preferências<dd>Por exemplo, quando o usuário marca a opção <b>“Destacar o fundo dos totais"</b>, essa escolha é salva na Web Storage para manter nas suas próximas visitas à plataforma.</dl><h2>Destino dos dados</h2><p>Todos os dados são salvos localmente (no navegador do usuário). O armazenamento local é para fins de memorização e com isso tornar os dados suficientemente duráveis.<h2>Gerenciamento dos dados pelo usuário</h2><p>No menu do Totalizador, existe a opção <strong>“Esvaziar a ficha”</strong>, que permite ao usuário apagar todos os dados da ficha salvos pelo Totalizador na Web Storage.<div class=consentimento><p class=destaque>A aceitação dos termos de armazenamento apresentados neste bloco é dada pela utilização do Totalizador de Resumo Mensal de PRN II.</div><button class=fechar-artigo title=Fechar><span class=times>× </span><svg style=width:16px;height:16px><line stroke=#333 stroke-width=2px x1=0% x2=50% y1=50% y2=0></line><line stroke=#333 stroke-width=2px x1=0% x2=50% y1=50% y2=100%></line><line stroke=#333 stroke-width=2px x1=-1 x2=100% y1=50% y2=50%></line></svg></button></section><section id=conversao-pdf><h1>Como salvar a ficha em PDF?</h1><ol><li>Clique na opção "<b>Imprimir</b>".<li>Na janela que abrirá, no campo de <b>Impressora</b> ou <b>Destino</b> selecione a opção “<b>Salvar como PDF</b>”.<li>Por fim, clique em <b>salvar</b> e escolha o destino no seu computador.</ol><button class=fechar-artigo title=Fechar>×</button></section></article><footer><div class="linha do-rodape"><div class=hiperligacoes><h4>Links para outros serviços afins</h4><ul><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-consultas/index.html target=_blank>Totalizador de Resumo Mensal de Consultas</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-hiv-e-sida/index.html target=_blank>Totalizador de Resumo Mensal de HIV/SIDA</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-saaj/index.html target=_blank>Totalizador de Resumo Mensal de SAAJ</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-ccd/index.html target=_blank>Totalizador de Resumo Mensal de CCD</a><li><a href=https://quinamine.github.io/tarv-pediatrico/index.html target=_blank>Doseador Pediátrico de Antirretrovirais</a><li><a href=https://quinamine.github.io/calculadora-de-doses-pediatricas/index.html target=_blank>Calculadora de Doses Pediátricas</a></ul></div><p>Desenvolvido com 💙 por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html>Adérito Félix Quinamine</a> | © 2023 - Totalizador de Resumo Mensal de PRN II</p><a href=#ficha class=voltar>Voltar ao topo</a></div></footer><div class=desfoque></div>
+        <article><section id=sobre><h1>Sobre o totalizador</h1><figure><img alt="Totalizador de Resumo Mensal de PRN II"src=imagens/totalizador-de-resumo-mensal-de-prn-ii.png></figure><p>O <b>Totalizador de Resumo Mensal de PRN II</b> é um serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos) totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde). A sua estrutura é baseada na da ficha de resumo mensal de PRN II actualmente (2023) vigente no Serviço Nacional de Saúde em Moçambique.<p>O propósito é de flexibilizar a elaboração do resumo através do cálculo automático dos totais.<p>O Totalizador de Resumo Mensal de PRN II reúne os seguintes recursos:<ul><li>Calcula e autopreenche as células dos totais;<li>Fornece resultados verdadeiros;<li>Flexibiliza a elaboração do resumo;<li>Salva os dados no navegador do usuário até este excluí-los;<li>Pode ser impresso.</ul><button class=fechar-artigo title=Fechar>×</button></section><section id=cookies><h1>Política de Armazenamento de dados</h1><p><b>Web Storage</b> é um recurso para armazenamento local (no navegador do usuário) de informações por meio de pequenos arquivos de texto, útil para guardar predefinições.<p class=mb-10>Existem 2 tipos de Web Storage:<ul><li><b>Session Storage (Armazenamento de Sessão)</b> – elimina os dados gravados quando a janela da página é fechada.<li><b>Local Storage (Armazenamento Local)</b> – mantém os dados salvos por um período determinado ou até que o usuário exclua.</ul><p>O Totalizador de Resumo Mensal de PRN II utiliza o primeiro para guardar o consentimento do usuário à Política de Armazenamento e o último pelas razões do subtítulo a seguir.<h2>Por que armazeno dados?</h2><p class=mb-10>Por 3 razões, enumeradamente:<dl><dt id=um>Fazer um backup local<dd class=mb-10>Fazer uma cópia de segurança dos dados da ficha no navegador do usuário. Se forem preenchidos, os dados que são salvos incluem:</dd><ul><li><b>Os dados da ficha propriamente dita.</b><li><b>Dados adicionais como:</b><ul><li>Província;<li>Distrito;<li>Unidade Sanitária;<li>Mês;<li>Data de elaboração;<li>Nome do Responsável pelo compilamento;<li>Assinatura do Responsável pelo compilamento;<li>Nota do resumo.</ul></ul><dt id=dois>Durabilidade dos dados<dd>Manter salvos os dados previamente inseridos no acto de preenchimento da ficha por tempo suficiente para serem aproveitáveis. Isso é importante, pois possibilita o Profissional interromper sem o risco de voltar à estaca zero, a elaboração do resumo para continuar num outro momento oportuno, sobretudo se ainda lhe faltar dados de alguns indicadores para preencher nas respectivas células da ficha.<dt id=tres>Salvar preferências<dd>Por exemplo, quando o usuário marca a opção <b>“Destacar o fundo dos totais"</b>, essa escolha é salva na Web Storage para manter nas suas próximas visitas à plataforma.</dl><h2>Destino dos dados</h2><p>Todos os dados são salvos localmente (no navegador do usuário). O armazenamento local é para fins de memorização e com isso tornar os dados suficientemente duráveis.<h2>Gerenciamento dos dados pelo usuário</h2><p>No menu do Totalizador, existe a opção <strong>“Esvaziar a ficha”</strong>, que permite ao usuário apagar todos os dados da ficha salvos pelo Totalizador na Web Storage.<div class=consentimento><p class=destaque>A aceitação dos termos de armazenamento apresentados neste bloco é dada pela utilização do Totalizador de Resumo Mensal de PRN II.</div><button class=fechar-artigo title=Fechar><span class=times>× </span><svg style=width:16px;height:16px><line stroke=#333 stroke-width=2px x1=0% x2=50% y1=50% y2=0></line><line stroke=#333 stroke-width=2px x1=0% x2=50% y1=50% y2=100%></line><line stroke=#333 stroke-width=2px x1=-1 x2=100% y1=50% y2=50%></line></svg></button></section><section id=conversao-pdf><h1>Como salvar a ficha em PDF?</h1><ol><li>Clique na opção "<b>Imprimir</b>".<li>Na janela que abrirá, no campo de <b>Impressora</b> ou <b>Destino</b> selecione a opção “<b>Salvar como PDF</b>”.<li>Por fim, clique em <b>salvar</b> e escolha o destino no seu computador.</ol><button class=fechar-artigo title=Fechar>×</button></section></article><footer><div class="linha do-rodape"><div class=hiperligacoes><h4>Links para outros serviços afins</h4><ul><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-consultas/index.html target=_blank>Totalizador de Resumo Mensal de Consultas</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-hiv-e-sida/index.html target=_blank>Totalizador de Resumo Mensal de HIV/SIDA</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/index.html target=_blank>Totalizador de Resumo Mensal de Malária</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-saaj/index.html target=_blank>Totalizador de Resumo Mensal de SAAJ</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-ccd/index.html target=_blank>Totalizador de Resumo Mensal de CCD</a><li><a href=https://quinamine.github.io/tarv-pediatrico/index.html target=_blank>Doseador Pediátrico de Antirretrovirais</a><li><a href=https://quinamine.github.io/calculadora-de-doses-pediatricas/index.html target=_blank>Calculadora de Doses Pediátricas</a></ul></div><p>Desenvolvido com 💙 por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html>Adérito Félix Quinamine</a> | © 2023 - Totalizador de Resumo Mensal de PRN II</p><a href=#ficha class=voltar>Voltar ao topo</a></div></footer><div class=desfoque></div>
     </body>
 </html>
