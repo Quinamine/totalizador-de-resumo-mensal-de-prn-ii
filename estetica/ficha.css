@@ -135,6 +135,15 @@ header div.grid-7 span {
     justify-content: center;
 }
 
+@media screen and (max-width: 850px) {
+    header div.grid-7 span:first-child {
+        position:-webkit-sticky;
+        position: sticky;
+        left: -55px;
+        background-color: var(--gray-d);
+    }
+}
+
 div.grid-1 span {
     font-weight: bold;
     min-height: 100%;
@@ -167,6 +176,24 @@ div.body div.grid-8 span:first-child {
 div.body div.grid-8 span:nth-child(2) {
     padding-left: 6px;
     border-left-width: 1px;
+}
+
+@media screen and (max-width: 850px) {
+    div.body div.grid-8 span:first-child,
+    div.body div.grid-8 span:nth-child(2) {
+        position:-webkit-sticky;
+        position: sticky;
+        left: -15px;
+        background-color: var(--yt);
+    }
+
+    div.body div.grid-8 span:first-child {
+        background-color: var(--gray-d);
+    }
+
+    div.body div.grid-8.total.de-transicoes span:first-child {
+        background-color: var(--yt);
+    }
 }
 
 div.body div.grid-8 input {

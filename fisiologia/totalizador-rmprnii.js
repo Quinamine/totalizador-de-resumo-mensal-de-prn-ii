@@ -37,8 +37,6 @@ const armazenamento = {
     }
 }
 
-
-
 const totalizador = {
 
     filtrarCelulas(cel) {
@@ -61,6 +59,25 @@ const totalizador = {
             const celulasPorTotalizar = document.querySelectorAll(`.${cel.dataset.totaldeadmissoesc6}`);
             const celula_de_saida = document.querySelector(`.${cel.dataset.totaldeadmissoesc6output}`);
             this.totalizarCelulas(celulasPorTotalizar, celula_de_saida);
+        }
+
+
+        if(cel.dataset.totaldetransicoes) {
+            const dataValue = cel.dataset.totaldetransicoes.split("-corte-");
+            
+            const a = document.querySelector(`.${dataValue[0]}`);
+            const b = document.querySelector(`.${dataValue[1]}`);
+            const c = document.querySelector(`.${dataValue[2]}`);
+
+            const celula_de_saida = document.querySelector(`.${cel.dataset.totaldetransicoesoutput}`);
+
+            const numero_de_transicoes = Number(a.value) + Number(b.value) - c.value;
+            celula_de_saida.value = numero_de_transicoes;
+
+            // Numero Geral de transicoes
+            const linhaD = document.querySelectorAll("div.total.de-transicoes input.d");
+            const celulaDc6 = document.querySelector("input.d-c6");
+            this.totalizarCelulas(linhaD, celulaDc6);
         }
     },
 
