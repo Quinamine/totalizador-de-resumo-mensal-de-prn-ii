@@ -1,1 +1,645 @@
-<!doctypehtml><html dir=ltr lang=pt-MZ><meta charset=UTF-8><meta content="width=device-width,initial-scale=1"name=viewport><title>Totalizador de Resumo Mensal de PRN II</title><meta content="index, follow"name=robots><meta content="Serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde)."name=description><meta content="Totalizador de Resumo Mensal de PRN II, Totalizador de Resumo Mensal de Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos, Ficha de Resumo Mensal de PRN II"name=keywords><meta content="Adérito Félix Quinamine"name=author><meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/index.html property=og:url><meta content="Totalizador de Resumo Mensal de PRN II"property=og:title><meta content="Serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde)."property=og:description><meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/imagens/totalizador-de-resumo-mensal-de-prn-ii.png property=og:image><link href=favicon.ico rel="shortcut icon"type=image/x-icon><link href=estetica/reset.css rel=stylesheet><link href=estetica/layout.css rel=stylesheet><link href=estetica/ficha.css rel=stylesheet><link href=estetica/aside.css rel=stylesheet><script src=fisiologia/menu.js></script><script src=fisiologia/inputvalidation.js></script><script src=fisiologia/totalizador-rmprnii.js></script><script src=fisiologia/referencia.js></script><script src=fisiologia/webstorage.js></script><script src="https://www.googletagmanager.com/gtag/js?id=G-6DVBGJL33D"async></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-6DVBGJL33D")</script><noscript>O seu navegador está com o JavaScript desabilitado e isso bloqueia as funcionalidades do Totalizador. Habilite-o nas configurações do navegador e recarregue a página.</noscript><body id=ficha ontouchstart=""><header><div class="linha do-cabecalho"><a href=index.html class=logo>Totalizador de Resumo <span>Mensal</span> de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr></a><section class=menu role=navigation><ul><li title="Adicionar um fundo opaco às celulas dos totais"class=destacar-as-celulas-automaticas><input type=checkbox id=readonlyinputs-darker> <label for=readonlyinputs-darker>Destacar o fundo dos totais</label><li title="Limpar os dados da ficha"><button class=esvaziar-ficha>Esvaziar <span class=hide-on-desk>a ficha</span></button><li title="Imprimir a ficha"class=impressao><button class=imprimir>Imprimir</button><li title=Tutorial><button class=salvar-como-pdf>Salvar como PDF <span class=question-mark>?</span></button><li title="Sobre o totalizador"class=sobre><button class=abrir-artigo-sobre>Sobre</button><li title="Partilhar o endereço do totalizador"class=partilha><button class=partilhar>Partilhar...</button></ul></section></div></header><main class=linha><div class=container><header><div class="col1 emblema-e-republica"><figure><img alt="Emblema da República de Moçambique"src=imagens/emblema.png></figure><div class=republica><span>República de Moçambique</span> <span>Ministério da Saúde</span></div></div><h1>Resumo Mensal do <abbr title="Programa de Reabilitação Nutricional">PRN</abbr> para Pacientes ≥ 15 Anos</h1><div class=geo><div class=flex-container><label for=provincia>Província:</label> <input id=provincia></div><div class=flex-container><label for=us>US:</label> <input id=us></div><div class=flex-container><label for=distrito>Distrito:</label> <input id=distrito></div><div class=flex-container><label for=mes>Mês:</label> <input id=mes></div></div></header><div class=ficha><header><div class=col1><div class=grid-7><span>Indicadores</span> <span>TRIAGEM</span> <span>TB</span> <span>CPN</span> <span>CPP</span> <span>TARV</span> <span>TOTAL</span></div><div class=grid-1><span>PACIENTES NO INÍCIO DO MÊS (A)</span></div></div><div class=col2><span>Coluna<br>correspondente<br>no livro de<br>registo</span></div></header><div class=body><div class=col1><div class=grid-8><span>A</span> <span>Nº de pacientes que transitaram do<br>mês anterior para este mês </span><input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class=a-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class=a-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class=a-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c1-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class=a-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class=a-c5> <input type=number min=0 class=a-c6 readonly></div><div class=grid-1><span>ADMISSÕES (B)</span></div><div class=grid-8><span>B1</span> <span>Nº de pacientes admitidos com<br>desnutrição aguda moderada<br>(DAM) com HIV+ e/ou TB</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c5 data-totaleixoyoutput=b5-c5> <input type=number min=0 class=b1-c6 readonly></div><div class=grid-8><span>B2</span> <span>Nº de pacientes admitidos com<br>desnutrição aguda moderada<br>(DAM) com HIV- ou desconhecido</span> <span class=nao-aplicavel></span> <span class=nao-aplicavel></span> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b2-c1c2c3c4c5 data-totaleixoxoutput=b2-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b2-c1c2c3c4c5 data-totaleixoxoutput=b2-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4> <span class=nao-aplicavel></span> <input type=number min=0 class=b2-c6 readonly></div><div class=grid-8><span>B3</span> <span>Nº de pacientes admitidos com<br>desnutrição aguda grave (DAG)<br>com HIV+</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2> <input type=number min=0 data-totaldetransicoes=a-3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c5 data-totaleixoyoutput=b5-c5> <input type=number min=0 class=b3-c6 readonly></div><div class=grid-8><span>B4</span> <span>Nº de pacientes admitidos com<br>desnutrição aguda grave (DAG)<br>com HIV- ou desconhecido</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4> <span class=nao-aplicavel></span> <input type=number min=0 class=b4-c6 readonly></div><div class="grid-8 total de-admissoes"><span>Total Admissões (B1+B2+B3+B4)</span> <input type=number min=0 class=b5-c1 readonly> <input type=number min=0 class=b5-c2 readonly> <input type=number min=0 class=b5-c3 readonly> <input type=number min=0 class=b5-c4 readonly> <input type=number min=0 class=b5-c5 readonly> <input type=number min=0 class=b5-c6 readonly></div><div class=grid-1><span>ALTAS (C)</span></div><div class=grid-8><span>C1</span> <span>Nº de pacientes curados</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5> <input type=number min=0 class=lc1-c6 readonly></div><div class=grid-8><span>C2</span> <span>Nº de pacientes que abandonaram<br>o tratamento</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5> <input type=number min=0 class=lc2-c6 readonly></div><div class=grid-8><span>C3</span> <span>Nº de óbitos</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5> <input type=number min=0 class=lc3-c6 readonly></div><div class=grid-8><span>C4</span> <span>Nº de pacientes referidos para o<br>TDI</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5> <input type=number min=0 class=lc4-c6 readonly></div><div class=grid-8><span>C5</span> <span>Nº de pacientes transferidos para<br>outro sector ou US</span> <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1> <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2> <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3> <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4> <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5> <input type=number min=0 class=lc5-c6 readonly></div><div class="grid-8 total de-altas"><span>Total Altas (C1+C2+C3+C4+C5)</span> <input type=number min=0 class=lc6-c1 readonly> <input type=number min=0 class=lc6-c2 readonly> <input type=number min=0 class=lc6-c3 readonly> <input type=number min=0 class=lc6-c4 readonly> <input type=number min=0 class=lc6-c5 readonly> <input type=number min=0 class=lc6-c6 readonly></div><div class="grid-8 total de-transicoes"><span>Nº de pacientes que transitam para o<br>mês seguinte (A+B-C)</span> <input type=number min=0 class="d d-c1"readonly> <input type=number min=0 class="d d-c2"readonly> <input type=number min=0 class="d d-c3"readonly> <input type=number min=0 class="d d-c4"readonly> <input type=number min=0 class="d d-c5"readonly> <input type=number min=0 class=d-c6 readonly></div></div><div class=col2><span></span> <span></span> <span>17</span> <span>18</span> <span>19</span> <span>20</span> <span class=fundo-cinza></span> <span></span> <span>24</span> <span>25</span> <span>26</span> <span>27</span> <span>28</span> <span class=fundo-cinza></span> <span class=bounding-reference></span></div></div><footer class=linha-de-assinatura><div><label for=data>Data:</label> <input type=date id=data></div><div><label for=assinatura>Assinatura do Responsável do Sector:</label> <input id=assinatura></div></footer></div><div class="linha nota"><textarea id=nota placeholder="Adicionar uma nota..."rows=3></textarea></div><div class=linha-de-referencia><div class=coluna-de-referencia><div><span><b>Referência</b> → Coluna:</span><output class=ref-de-coluna></output></div></div></div></div><aside class=manipulacao-do-menu><div class=pesquisa><div class=caixa-de-pesquisa><input type=number min=1 class=pesquisar-linha max=63 placeholder="Introduza o número da linha"> <button class=fechar title=Fechar>×</button></div><div class="caixa-de-alerta query-out-of-range"><p><b class=entered-num></b> não corresponde à nenhuma linha. A ficha tem no máximo 73 linhas a partir de 1.</p><button>OK</button></div></div><div class=esvaziamento><div class=caixa-de-confirmacao><h3>Esvaziar a ficha</h3><p>Tem certeza de que pretende esvaziar a ficha?<div class=alerta><svg style=width:40px;height:40px><linearGradient id=meuGradiente x1=0% x2=0% y1=0% y2=100%><stop offset=0% style=stop-color:gray></stop><stop offset=100% style=stop-color:#ff0></stop></linearGradient><polygon fill=url(#meuGradiente) points="20,0 40,40, 0,40"stroke=#333 stroke-width=1></polygon><text style=font-weight:700;font-size:28px x=15.335 y=35.5>!</text></svg><p>Esta acção não pode ser desfeita.</div><h4>Dados adicionais</h4><ul class=limpadores-de-dados-adicionais><li><input type=checkbox id=nome-da-provincia checked data-for=provincia> <label for=nome-da-provincia>Província</label><li><input type=checkbox id=nome-do-distrito checked data-for=distrito> <label for=nome-do-distrito>Distrito</label><li><input type=checkbox id=nome-da-us checked data-for=us> <label for=nome-da-us>US</label><li><input type=checkbox id=month checked data-for=mes> <label for=month>Mês</label><li><input type=checkbox id=data-de-elaboracao checked data-for=data> <label for=data-de-elaboracao>Data de elaboração</label><li><input type=checkbox id=nome-do-compilador checked data-for=assinatura> <label for=nome-do-compilador>Assinatura do Responsável<br>pelo Sector</label><li><input type=checkbox id=nota-do-resumo checked data-for=nota> <label for=nota-do-resumo>Nota do resumo</label></ul><div class=botoes-de-confirmacao><button class=cancelar>Cancelar</button> <button class=confirmar>Confirmar</button></div></div><div class="caixa-de-alerta ficha-vazia"><p>A ficha não está preenchida.</p><button>OK</button></div></div><div class="caixa-de-alerta restricao-de-acesso-celular"><p>As células dos totais têm o acesso interdito para assegurar que os seus valores não sejam acidentalmente modificados.</p><button>OK</button></div><div class="caixa-de-alerta indicador-nao-aplicavel"><p>Indicador não aplicável para o sexo <span class=sexo-output></span>.</p><button>OK</button></div><div class=razao-pelas-celulas-com-fundo-vermelho><h2>Por que algumas células ficaram com o fundo vermelho?</h2><p class="destaque obs">Toda célula cujo fundo está vermelho tem um ou mais algarismos omissos por indisponibilidade de espaço na respectiva célula.<p>As células de entrada de dados do totalizador têm uma largura para 9 algarismos no máximo, portanto, só podem mostrar valores até <strong>999 999 999</strong>. A partir de 1 000 000 000, ficam visíveis somente os primeiros 9 algarismos e do 10º em diante, ficam fora da área visível da célula.<p class="destaque suposicao">Presumo que actualmente (2023) não haja uma Unidade Sanitária em Moçambique com um número de consultas de PRN II maior que 999 999 999.<div class=seccao-de-interatividade><div><input type=checkbox id=nao-mostrar-mais> <label for=nao-mostrar-mais>Não volte a mostrar esta mensagem</label></div><button class=close-redcels-obs>Fechar</button></div></div><div class=aviso-de-uso-de-cookies><p>Ao utilizar o Totalizador de Resumo Mensal de PRN II, o usuário concorda com o armazenamento local de dados, a fim de melhorar a sua experiência de utilização. <button class=abrir-artigo-cookies>Saiba mais...</button></p><button class=aceitar-cookies>Prosseguir</button></div></aside></main><article><section id=sobre><h1>Sobre o totalizador</h1><figure><img alt="Totalizador de Resumo Mensal de PRN II"src=imagens/totalizador-de-resumo-mensal-de-prn-ii.png></figure><p>O <b>Totalizador de Resumo Mensal de PRN II</b> é um serviço online gratuito que auxilia na elaboração do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos) totalizando-o automaticamente com base nos dados preenchidos pelo usuário (Profissional de Saúde). A sua estrutura é baseada na da ficha de resumo mensal de PRN II actualmente (2023) vigente no Serviço Nacional de Saúde em Moçambique.<p>O propósito é de flexibilizar a elaboração do resumo através do cálculo automático dos totais.<p>O Totalizador de Resumo Mensal de PRN II reúne os seguintes recursos:<ul><li>Calcula e autopreenche as células dos totais;<li>Fornece resultados verdadeiros;<li>Flexibiliza a elaboração do resumo;<li>Salva os dados no navegador do usuário até este excluí-los;<li>Pode ser impresso.</ul><button class=fechar-artigo title=Fechar>×</button></section><section id=cookies><h1>Política de Armazenamento de dados</h1><p><b>Web Storage</b> é um recurso para armazenamento local (no navegador do usuário) de informações por meio de pequenos arquivos de texto, útil para guardar predefinições.<p class=mb-10>Existem 2 tipos de Web Storage:<ul><li><b>Session Storage (Armazenamento de Sessão)</b> – elimina os dados gravados quando a janela da página é fechada.<li><b>Local Storage (Armazenamento Local)</b> – mantém os dados salvos por um período determinado ou até que o usuário exclua.</ul><p>O Totalizador de Resumo Mensal de PRN II utiliza o primeiro para guardar o consentimento do usuário à Política de Armazenamento e o último pelas razões do subtítulo a seguir.<h2>Por que armazeno dados?</h2><p class=mb-10>Por 3 razões, enumeradamente:<dl><dt id=um>Fazer um backup local<dd class=mb-10>Fazer uma cópia de segurança dos dados da ficha no navegador do usuário. Se forem preenchidos, os dados que são salvos incluem:</dd><ul><li><b>Os dados da ficha propriamente dita.</b><li><b>Dados adicionais como:</b><ul><li>Província;<li>Distrito;<li>US;<li>Mês;<li>Data de elaboração;<li>Assinatura do Responsável do Sector;<li>Nota do resumo.</ul></ul><dt id=dois>Durabilidade dos dados<dd>Manter salvos os dados previamente inseridos no acto de preenchimento da ficha por tempo suficiente para serem aproveitáveis. Isso é importante, pois possibilita o Profissional interromper sem o risco de voltar à estaca zero, a elaboração do resumo para continuar num outro momento oportuno, sobretudo se ainda lhe faltar dados de alguns indicadores para preencher nas respectivas células da ficha.<dt id=tres>Salvar preferências<dd>Por exemplo, quando o usuário marca a opção <b>“Destacar o fundo dos totais"</b>, essa escolha é salva na Web Storage para manter nas suas próximas visitas à plataforma.</dl><h2>Destino dos dados</h2><p>Todos os dados são salvos localmente (no navegador do usuário). O armazenamento local é para fins de memorização e com isso tornar os dados suficientemente duráveis.<h2>Gerenciamento dos dados pelo usuário</h2><p>No menu do Totalizador, existe a opção <strong>“Esvaziar a ficha”</strong>, que permite ao usuário apagar todos os dados da ficha salvos pelo Totalizador na Web Storage.<div class=consentimento><p class=destaque>A aceitação dos termos de armazenamento apresentados neste bloco é dada pela utilização do Totalizador de Resumo Mensal de PRN II.</div><button class=fechar-artigo title=Fechar><span class=times>× </span><svg style=width:16px;height:16px><line stroke=#333 stroke-width=2px x1=0% x2=50% y1=50% y2=0></line><line stroke=#333 stroke-width=2px x1=0% x2=50% y1=50% y2=100%></line><line stroke=#333 stroke-width=2px x1=-1 x2=100% y1=50% y2=50%></line></svg></button></section><section id=conversao-pdf><h1>Como salvar a ficha em PDF?</h1><ol><li>Clique na opção "<b>Imprimir</b>".<li>Na janela que abrirá, no campo de <b>Impressora</b> ou <b>Destino</b> selecione a opção “<b>Salvar como PDF</b>”.<li>Por fim, clique em <b>salvar</b> e escolha o destino no seu computador.</ol><button class=fechar-artigo title=Fechar>×</button></section></article><footer><div class="linha do-rodape"><div class=hiperligacoes><h4>Links para outros serviços afins</h4><ul><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-consultas/index.html target=_blank>Totalizador de Resumo Mensal de Consultas</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-hiv-e-sida/index.html target=_blank>Totalizador de Resumo Mensal de HIV/SIDA</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/index.html target=_blank>Totalizador de Resumo Mensal de Malária</a><li><a href=https://quinamin.github.io/totalizador-de-resumo-mensal-de-prn-i/index.html target=_blank>Totalizador de Resumo Mensal de PRN I</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-saaj/index.html target=_blank>Totalizador de Resumo Mensal de SAAJ</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-ccd/index.html target=_blank>Totalizador de Resumo Mensal de CCD</a><li><a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-ats/index.html target=_blank>Totalizador de Resumo Mensal de ATS</a><li><a href=https://quinamine.github.io/calculadora-de-doses-pediatricas/index.html target=_blank>Calculadora de Doses Pediátricas</a><li><a href=https://quinamine.github.io/tarv-pediatrico/index.html target=_blank>Doseador de Antirretrovirais</a><li class=sem-margem><a href=https://quinamin.github.io/requisicao-balancete/index.html target=_blank>Requisição/Balancete</a></ul></div><p>Desenvolvido com 💙 por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html>Adérito Félix Quinamine</a> | © 2023 - Totalizador de Resumo Mensal de PRN II</p><a href=#ficha class=voltar>Voltar ao topo</a></div></footer><div class=desfoque></div>
+<!doctypehtml>
+<html dir=ltr lang=pt-MZ id="root">
+    <meta charset=UTF-8>
+    <meta content="IE=edge" http-equiv=X-UA-Compatible>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <title>Totalizador de Resumo Mensal de PRN II</title>
+    <meta content="index, follow" name=robots>
+    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique." name=description>
+    <meta content="Totalizador de Resumo Mensal de PRN II, Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos, Totalizador de Relatório Mensal de PRN II, Ficha de Resumo Mensal de PRN II." name=keywords>
+    <meta content="Adérito Félix Quinamine" name=author>
+    <meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/index.html property=og:url>
+    <meta content="Totalizador de Resumo Mensal de PRN II" property=og:title>
+    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique." property=og:description>
+    <meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/imagens/totalizador-de-resumo-mensal-de-prn-ii.png property=og:image>
+    <link href=favicon.ico rel="shortcut icon" type=image/x-icon>
+    <link href=anatomia/reset.css rel=stylesheet>
+    <link href=anatomia/layout.css rel=stylesheet>
+    <link href=anatomia/ficha.css rel=stylesheet>
+    <script src="fisiologia/menu.js"></script>
+    <script src="fisiologia/main.js"></script>
+    <script src="fisiologia/multifuncoes.js"></script>
+    <script src="fisiologia/db.js"></script>
+    <script src="fisiologia/referencia.js"></script>
+    
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-6DVBGJL33D" async></script>
+    <script>
+        function gtag() {
+            dataLayer.push(arguments)
+        }
+        window.dataLayer = window.dataLayer || [],
+        gtag("js", new Date),
+        gtag("config", "G-6DVBGJL33D")
+    </script>
+    <noscript>O seu navegador está com o JavaScript desabilitado e isso bloqueia as funcionalidades do Totalizador. Habilite-o nas configurações do navegador e recarregue a página.</noscript>
+
+    <body class="body" ontouchstart="">
+        <header class="header --no-print">
+            <div class="layout-row header__row --display-flex-y-center">
+                <a href=index.html class=header__logo>
+                    Totalizador de Resumo <span class="logo__span--hide-on-screen-s">Mensal</span>
+                    de PRN II
+                </a>
+                <div role="navigation" class="header__nav --display-flex-y-center">
+                    <ul class="header__nav__ul --display-flex-y-center">
+                        <li class="header__nav__li header__nav__li--realcartotais">
+                            <input type=checkbox id="checkbox-realcar-totais" class="header__checkbox header__child--cursor">
+                            <label for="checkbox-realcar-totais" class="header__nav__label --display-flex-y-center header__child--cursor">
+                                Realçar&nbsp;totais
+                            </label>
+                        <li class="header__nav__li">
+                            <button class="header__nav__btn header__nav__btn--ir-para">Ir para a linha...</button>
+                        <li class="header__nav__li">
+                            <button class="header__nav__btn header__nav__btn--esvaziar-ficha">Esvaziar ficha</button>
+                        <li class="header__nav__li">
+                            <button class="header__nav__btn header__nav__btn--imprimir">
+                                <span class="--hide-on-mobile header__child--cursor">Imprimir</span>
+                                <span class="--hide-on-desktop header__child--cursor">Salvar&nbsp;como&nbsp;PDF</span>
+                            </button>
+                        <li class="header__nav__li header__li--hide-on-mobile">
+                            <button class="header__nav__btn header__nav__btn--sobre">Sobre</button>
+                        <li class="header__nav__li">
+                            <button class="header__nav__btn header__nav__btn--ajuda">
+                                Ajuda
+                            </button>
+                        <li class="header__nav__li header__li--hide-on-desktop">
+                            <button class="header__nav__btn header__nav__btn--partilhar">Partilhar...</button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class=ficha>
+                <header>
+                    <div class="ficha__col-de-emblema">
+                        <figure class="ficha__moldura-de-emblema">
+                            <img alt="Emblema da República de Moçambique" src=imagens/emblema.png>
+                        </figure>
+                        <div class=ficha__box-descricao-de-emblema>
+                            <span class="ficha__span-descricao-de-emblema">República de Moçambique</span>
+                            <span class="ficha__span-descricao-de-emblema">Ministério da Saúde</span>
+                        </div>
+                    </div>
+                    <h1 class="ficha__titulo">
+                        Resumo Mensal do <abbr title="Programa de Reabilitação Nutricional" class="ficha__titulo__abbr">PRN</abbr>
+                        para Pacientes ≥ 15 Anos
+                    </h1>
+                    <div class=ficha__linha-de-localizacao>
+                        <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
+                            <label for=input-provincia>Província:</label>
+                            <input id=input-provincia class="input-nao-celular --border-b --fw-700">
+                        </div>
+                        <div class="ficha__linha-de-localizacao__col  --display-flex-y-center">
+                            <label for=input-us>US:</label>
+                            <input id=input-us class="input-nao-celular --border-b --fw-700">
+                        </div>
+                        <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
+                            <label for=input-distrito>Distrito:</label>
+                            <input id=input-distrito class="input-nao-celular --border-b --fw-700">
+                        </div>
+                        <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
+                            <label for=input-mes>Mês:</label>
+                            <input id=input-mes class="input-nao-celular --border-b --fw-700">
+                        </div>
+                    </div>
+                </header>
+                <div class=ficha__body>
+                    <header class="ficha__body__header ficha__grid-template-col-720-110">
+                        <div class="ficha__header__col-720 --border-l-thick">
+                            <div class="ficha__header__linha-de-servicos --border-t-thick">
+                                <span class=" ficha__header__titulo-indicadores ficha__child-pos--sticky --display-flex-xy-center --border-b-thick">Indicadores</span>
+                                <span class="--display-flex-xy-center --border-b-thick --border-l-thick">TRIAGEM</span>
+                                <span class="--display-flex-xy-center --border-b-thick --border-l-thick">TB</span>
+                                <span class="--display-flex-xy-center --border-b-thick ">CPN</span>
+                                <span class="--display-flex-xy-center --border-b-thick --border-l-thick">CPP</span>
+                                <span class="--display-flex-xy-center --border-b-thick --border-l-thick">TARV</span>
+                                <span class="--display-flex-xy-center --border-r-thick --border-b-thick --border-l-thick ">TOTAL</span>
+                            </div>
+                            <div class="ficha__header__linha-pacientes-no-inicio-do-mes --display-flex-y-center --border-r-thick --border-b-thick">
+                                <span>PACIENTES NO INÍCIO DO MÊS (A)</span>
+                            </div>
+                        </div>
+                        <div class="ficha__header__col-110 --border">
+                            <span>
+                                Coluna<br>
+                                correspondente<br>
+                                no livro de<br>registo
+                            </span>
+                        </div>
+                    </header>
+                    <div class=ficha__grid-template-col-720-110>
+                        <div class="ficha__body__col-720 --border-l-thick">
+                            <div class="ficha__grid-template-col-8">
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">A</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes que transitaram do <br> mês anterior para este mês 
+                                    </span>
+                                </div>
+                                
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c1 --border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c2 --border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c3 --border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c1-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c4 --border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c5 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="a-c6 --border-b --border-l-thick --border-r-thick">
+                            </div>
+                            <div class="ficha__grid-template-col-1">
+                                <div class="ficha__container-de-indicador --display-flex-y-center --border-r-thick --border-b">
+                                    <span class="--fw-700">ADMISSÕES (B)</span>
+                                </div>
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">B1</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes admitidos com <br> desnutrição aguda moderada <br> (DAM) com HIV+ e/ou TB 
+                                    </span>
+                                </div>
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c5 data-totaleixoyoutput=b5-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b1-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">B2</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes admitidos com <br> desnutrição aguda moderada <br> (DAM) com HIV- ou desconhecido
+                                    </span>
+                                </div>
+                                <div class=celula-n-a></div>
+                                <div class=celula-n-a></div>
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b2-c1c2c3c4c5 data-totaleixoxoutput=b2-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput="b5-c3" class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b2-c1c2c3c4c5 data-totaleixoxoutput=b2-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput="b5-c4" class="--border-b --border-l-thick">
+                                <div class=celula-n-a></div>
+                                <input type=number min=0 readonly class="b2-c6 --border-b --border-l-thick --border-r-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">B3</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes admitidos com <br> desnutrição aguda grave (DAG) <br> com HIV+
+                                    </span>
+                                </div>
+                                
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c5 data-totaleixoyoutput=b5-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b3-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">B4</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes admitidos com <br> desnutrição aguda grave (DAG)  <br> com HIV- ou desconhecido
+                                    </span>
+                                </div>
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4 class="--border-b --border-l-thick">
+                                <div class=celula-n-a></div>
+                                <input type=number min=0 readonly class="b4-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class="ficha__grid-template-col-8 ficha__grid-template-col-8--realce-padrao">
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b">
+                                    <span class="--fw-700">Total Admissões (B1+B2+B3+B4)</span>
+                                </div>
+                                <input type=number min=0 readonly class="b5-c1 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b5-c2 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b5-c3 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b5-c4 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b5-c5 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="b5-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class="ficha__grid-template-col-1">
+                                <div class="ficha__container-de-indicador --display-flex-y-center --border-r-thick --border-b">
+                                    <span class="--fw-700">ALTAS (C)</span>
+                                </div>
+                            </div>
+                            
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">C1</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes curados
+                                    </span>
+                                </div>
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc1-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">C2</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes que abandonaram <br>  o tratamento
+                                    </span>
+                                </div>
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc2-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">C3</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de óbitos
+                                    </span>
+                                </div>
+                                
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc3-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">C4</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes referidos para o  <br> TDI
+                                    </span>
+                                </div>
+                               
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 class="lc4-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class=ficha__grid-template-col-8>
+                                <div class="--display-flex-xy-center --border-b">
+                                    <span class="--fw-700">C5</span>
+                                </div>
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                    <span>
+                                        Nº de pacientes transferidos para <br> outro sector ou US
+                                    </span>
+                                </div>
+                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
+                                <input type=number min=0 class="lc5-c6 --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class="ficha__grid-template-col-8 ficha__grid-template-col-8--realce-padrao">
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b">
+                                    <span class="--fw-700">Total Altas (C1+C2+C3+C4+C5)</span>
+                                </div>
+                                <input type=number min=0 readonly class="lc6-c1 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc6-c2 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc6-c3 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc6-c4 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc6-c5 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc6-c6  --border-r-thick --border-b --border-l-thick">
+                            </div>
+                            <div class="ficha__grid-template-col-8">
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b-thick">
+                                    <span class="--fw-700">Nº de pacientes que transitam para o <br> mês seguinte (A+B-C)</span>
+                                </div>
+                                    
+                                <input type=number min=0 readonly class="d d-c1 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="d d-c2 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="d d-c3 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="d d-c4 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="d d-c5 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="d d-c6 --border-r-thick --border-b-thick --border-l-thick">
+                            </div>
+                        </div>
+                        <div class="ficha__body__col-110 --border-l --border-r">
+                            <div class="--display-flex-xy-center --border-b"></div>
+                            <div class="--display-flex-xy-center --border-b"></div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">17</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">18</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">19</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">20</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b --realce-padrao"></div>
+                            <div class="--display-flex-xy-center --border-b"></div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">24</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">25</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">26</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">27</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b">
+                                <span class="--fw-700">28</span>
+                            </div>
+                            <div class="--display-flex-xy-center --border-b --realce-padrao"></div>
+                            <div class="--display-flex-xy-center --border-b"></div>
+                        </div>
+                    </div>
+                    <footer class=ficha__rodape>
+                        <div>
+                            <label for=input-data>Data:</label>
+                            <input type=date id=input-data class="ficha__rodape__input input-nao-celular --border-b --fw-700">
+                        </div>
+                        <div>
+                            <label for=input-assinatura>Assinatura do Responsável do Sector:</label>
+                            <input id=input-assinatura class="ficha__rodape__input ficha__rodape__input--assinatura input-nao-celular --border-b --fw-700">
+                        </div>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="main__container-de-campo-de-nota layout-row">
+                <textarea class="main__campo-de-nota input-nao-celular" id="input-comentarios" placeholder="Comentários sobre o resumo (S.O.S)..." rows=3></textarea>
+            </div>
+
+            <div class="reference-container --no-print">
+                <div class="layout-row reference-row">
+                    <span class="reference-row__label">Indicador:</span> 
+                    <output class="reference-row__output reference-row__output--indicador --display-flex-y-center"></output>
+
+                    <span class="reference-row__label">Coluna:</span> 
+                    <output class="reference-row__output reference-row__output--coluna --display-flex-xy-center --fw-700"></output>
+                </div>
+            </div>
+        </main>
+        
+        <section class="dialog-boxes --no-print">
+            <div class="dialog-box-default dialog-box-default--sobre-aqd">
+                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de PRN II</h3>
+                <p class="dialog-box-default__p">
+                    A utilização do totalizador é, de facto, uma garantia de um resumo correctamente totalizado, porém, isso simplesmente, não define a qualidade do resumo. Você é o único responsável pela veracidade, lógica e concordância dos dados preenchidos e, portanto, pela qualidade do resumo. O totalizador só se limita a calcular os totais baseando-se exactamente nos dados que você fornece.
+                </p>
+                <div class="dialog-box-default__btn-container">
+                    <button class="dialog-box-default__btn dialog-box-default__btn--aqd">Entendi</button>
+                </div>
+            </div>
+
+            <div class="dialog-box-default dialog-box-default--small">
+                <h3 class="dialog-box-default__title">Totalizador de Resumo Mensal de PRN II</h3>
+                <p class="dialog-box-default__p dialog-box-default__p--js-console --display-flex-y-center">
+                    
+                </p>
+                <div class="dialog-box-default__btn-container">
+                    <button class=dialog-box-default__btn>Fechar <span class="dialog-box-default__output-autoclose-loop"></span></button>
+                </div>
+            </div>
+
+            <div class="dialog-box-ir-para --display-flex-y-center">
+                <input type=number min=1 class=dialog-box-ir-para__input-linha max=73 placeholder="Ir para a linha (número da linha)">
+                <button class=dialog-box-ir-para__btn-fechar title=Fechar>×</button>
+            </div>
+            <div class="dialog-box-esvaziar-ficha">
+                <h3 class="dialog-box-esvaziar-ficha__titulo --fw-700">Esvaziar ficha</h3>
+                <p>Tem certeza de que pretende esvaziar a ficha?
+                <div class=dialog-box-esvaziar-ficha__svg-container>
+                    <svg style=width:40px;height:40px>
+                        <linearGradient id=meuGradiente x1=0% x2=0% y1=0% y2=100%>
+                            <stop offset=0% style=stop-color:gray></stop>
+                            <stop offset=100% style=stop-color:#ff0></stop>
+                        </linearGradient>
+                        <polygon fill=url(#meuGradiente) points="20,0 40,40, 0,40" stroke=#333 stroke-width=1></polygon>
+                        <text style=font-weight:700;font-size:28px x=15.335 y=35.5>!</text>
+                    </svg>
+                    <p class="dialog-box-esvaziar-ficha__last-p">Esta acção não pode ser desfeita.
+                </div>
+                <h4 class="dialog-box-esvaziar-ficha__titulo --fw-700">Dados adicionais</h4>
+                <ul class=dialog-box-esvaziar-ficha__ul-dados-adicionais>
+                    <li>
+                        <input type=checkbox checked id="checkbox-prov" data-inputadicionalid=input-provincia>
+                        <label for=checkbox-prov>Província</label>
+                    <li>
+                        <input type=checkbox checked id="checkbox-distrito" data-inputadicionalid=input-distrito>
+                        <label for=checkbox-distrito>Distrito</label>
+                    <li>
+                        <input type=checkbox checked id="checkbox-us" data-inputadicionalid=input-us>
+                        <label for=checkbox-us>US</label>
+                    <li>
+                        <input type=checkbox id=checkbox-mes checked data-inputadicionalid=input-mes>
+                        <label for=checkbox-mes>Mês</label>
+                    <li>
+                        <input type=checkbox id=checkbox-data checked data-inputadicionalid=input-data>
+                        <label for=checkbox-data>Data</label>
+                    <li>
+                        <input type=checkbox id=checkbox-nome checked data-inputadicionalid=input-nome>
+                        <label for=checkbox-nome>Nome</label>
+                    <li>
+                        <input type=checkbox id=checkbox-assinatura checked data-inputadicionalid=input-assinatura>
+                        <label for=checkbox-assinatura>
+                            Assinatura
+                        </label>
+                    <li>
+                        <input type=checkbox id=checkbox-comentarios checked data-inputadicionalid=input-comentarios>
+                        <label for=checkbox-comentarios>Comentários</label>
+                </ul>
+                <div class=dialog-box-esvaziar-ficha__btns-container>
+                    <button class="dialog-box-esvaziar-ficha__btn dialog-box-esvaziar-ficha__btn--cancelar">Cancelar</button>
+                    <button class="dialog-box-esvaziar-ficha__btn dialog-box-esvaziar-ficha__btn--confirmar">Confirmar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="sessao-de-artigos --no-print">
+            <article class="artigo artigo--sobre" id="sobre">
+                <h2 class="artigo__titulo artigo__titulo--nivel-1">Visão geral sobre o totalizador</h2>
+                <figure>
+                    <img alt="Totalizador de Resumo Mensal de PRN II" src=imagens/totalizador-de-resumo-mensal-de-prn-ii.png class="artigo__img artigo__img--sobre-o-tot">
+                </figure>
+                
+                <p>
+                    O <b>Totalizador de Resumo Mensal de PRN II</b> é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes &ge; 15 anos), por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique.
+                </p>
+
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Objectivos</h3>
+
+                <ul class="artigo__lista artigo__ul">
+                    <li>Calcular correcta e automaticamente os totais;</li>
+                    <li>Preencher automaticamente os totais nas células correspondentes;</li>
+                    <li>Minimizar possíveis erros de totalização, sobretudo por confusão (por exemplo, somar inadvertidamente células não correspondentes ou registar o total da linha A, na linha B);</li>
+                    <li >Expandir o acesso às fichas de resumos mensais, pois os <a href="https://quinamine.github.io/aderito-felix-quiinamine/paginas/portfolio.html" target="_blank">totalizadores</a> também constituem uma fonte universal de algumas fichas de resumos mensais para todos com acesso à internet.</li>
+                </ul>
+
+                <h3 class="artigo__titulo artigo__titulo--nivel-2 ">O que eu preciso dispor para, e como utilizar o totalizador?</h3>
+
+                <ul class="artigo__lista artigo__ul">
+                    <li>Um telemóvel ou computador com acesso à internet.</li>
+                    <li>Ter colhido os dados de todos os indicadores da ficha nas fontes primárias (livro(s) de registo) da sua Unidade Sanitária.</li>
+                    <li>E por fim, preencher os dados nas células correspondentes quanto ao indicador e variáveis (sexo e faixa etária), e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.</li>
+                </ul>
+
+                <p class="artigo__p--destaque">A utilização do totalizador é, de facto, uma garantia de um resumo correctamente totalizado, porém, isso simplesmente, não define a qualidade do resumo. Você é o único responsável pela veracidade, lógica e concordância dos dados preenchidos e, portanto, pela qualidade do resumo. O totalizador só se limita a calcular os totais baseando-se exactamente nos dados que você fornece.</p>
+
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Qual é o destino dos dados que eu insiro?</h3>
+
+                <p>São guardados localmente (no navegador que estiver a usar), por meio de um recurso chamado <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Web_Storage_API" target="_blank">Web Storage</a> e você tem total controle sobre esses, podendo mantê-los ou apagá-los por meio da opção "<b>Esvaziar ficha</b>" no menu do totalizador ou esvaziando o histórico (inclusíve os cookies) do seu navegador.</p>
+
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Vantagens do totalizador</h3>
+
+                <ul class="artigo__lista artigo__ul">
+                    <li>Calcula automaticamente os totais;</li>
+                    <li>Preenche automaticamente as células correspondentes aos totais;</li>
+                    <li>Fornece resultados (totais) exactos;</li>
+                    <li>Flexibiliza a elaboração do resumo;</li>
+                    <li>Pode ser impresso, inclusíve como uma simples ficha de resumo mensal;</li>
+                    <li >Pode ser guardado como PDF.</li>
+                </ul>
+
+                <h3 class="artigo__titulo artigo__titulo--nivel-2">Limitações do totalizador</h3>
+                    
+                <ul class="artigo__lista artigo__ul">
+                    <li>Não alerta sobre discrepância de dados, portanto, a análise da qualidade e lógica do resumo é inteiramente dependente do usuário;</li>
+                    <li>Disponibilidade remota (é necessário um telemóvel ou computador com acesso à internet para ser acessado).</li>
+                </ul>
+                <button class="artigo__btn-fechar artigo__btn-fechar--sobre" title="Fechar">&times;</button>
+            </article>
+
+            <article class="artigo artigo--ajuda">
+                <h2 class="artigo__titulo artigo__titulo--nivel-1 artigo__titulo--border-b-thick">Ajuda e Procedimentos</h2>
+
+                <details>
+                    <summary>Realçar totais</summary>
+                    <p>Adiciona um fundo amarelo a todas as células dos totais. Estas têm o acesso interdito e a funcionalidade de realçá-las, permite facilmente distinguir estas de outras células. Muito útil em dispositivos móveis.</p>
+                </details>
+                <details>
+                    <summary >Ir para a linha...</summary>
+                    <p>Abre um campo no qual pode digitar um número de linha no intervalo de 1 à 73 e, uma vez digitado o número, a página rola até a linha correspondente ao número.</p>
+                </details>
+                <details>
+                    <summary>Esvaziar ficha</summary>
+                    <p>Comando para limpar as células da ficha após a confirmação da acção na caixa de diálogo que abre.</p>
+                    
+                    <p>Permite também esvaziar campos adicionais (Província, Distrito, US, etc.) de forma seletiva. Para tal, na caixa de diálogo de confirmação, as "checkboxes" dos dados adicionais são, por padrão, marcadas com o sinal de "✔", indicando, desse modo, que o conteúdo contido nos respectivos campos será eliminado, mas caso queira manter a informação de um campo específico, basta desmarcá-lo clicando directamente sobre a ckeckbox ou sobre a sua descrição.</p> 
+
+                    <figure class="details__moldura details__moldura--esvaziar-ficha">
+                        <img src="imagens/caixa-de-dialogo-para-esvaziamento-da-ficha.png" alt="Caixa de diálogo de esvaziamento da ficha" class="artigo__img"/>
+
+                        <figcaption class="details__moldura__legenda"><b>Legenda:</b> Caixa de diálogo de esvaziamento da ficha. Neste caso, os campos de <b>Provínica, Distrito e Unidade Sanitária</b> seriam preservados (por ter suas checkboxes desmarcadas). Todos os outros cujas "checkboxes" estão marcadas, teriam seus campos esvaziados.</figcaption>
+                    </figure>
+
+                </details>
+                <details class="details-salvar-ficha-como-pdf">
+                    <summary>Salvar ficha como PDF</summary>
+                    <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--cor-discreta">No computador:</h3>
+                    <ol class="artigo__lista artigo__ol">
+                        <li>
+                            Clique na opção <mark>Imprimir</mark> no menu do totalizador.
+                        <li>
+                            Na janela que abrirá, no campo de <mark>Impressora</mark> ou <mark>Destino</mark>
+                            selecione a opção <mark>Salvar&nbsp;como&nbsp;PDF</mark>.
+                        <li >
+                            Por fim, clique em <mark>Salvar</mark> e escolha um destino no seu computador.
+                    </ol>
+
+                    <h3 class="artigo__titulo artigo__titulo--nivel-2 artigo__titulo--cor-discreta">No celular / tablet:</h3>
+                    <ol class="artigo__lista artigo__ol">
+                        <li>
+                            Toque na opção <mark>Salvar como PDF</mark> no cabeçalho do totalizador.
+                        </li>
+                        <li>
+                            Na janela seguinte, se não vir a opção <mark>Guardar como PDF</mark>, toque na seta <svg style="width: 24px; height: 18px;  border-radius: 4px; background-color: #dce4f4; position: relative; bottom: -5px;">
+                                <polygon points="6,6 18,6 12,12" fill="#888888"></svg> ao lado de <mark><b>Selec. impressora</b></mark> para expandir a opção.
+                        </li>
+
+                        <figure class="details__moldura">
+                            <img src="imagens/salvar-ficha-como-pdf-1.png" alt="Como salvar a ficha em PDF no celular" class="artigo__img" />
+                        </figure>
+                           
+                        <li>
+                          De seguida, selecione a opção <mark>Guardar como PDF</mark> e por fim, toque no simbolo de disquete e escolha um destino no seu celular para salvar o resumo.
+                        </li>
+
+                        <figure class="details__moldura">
+                            <img src="imagens/salvar-ficha-como-pdf-2.png" alt="Como salvar a ficha em PDF no celular" class="artigo__img" />
+                        </figure>
+                    </ol>
+                </details>
+                <details class="artigo__details-motivo-de-red-cells">
+                    <summary>Algumas células mudaram de cor de fundo para vermelho</summary>
+                    <p>As células do totalizador têm um tamanho para conter, visivelmente, 7 algarismos no máximo, isto é, mostram valores até, no máximo, <span class="number-format">9999999</span>. Quando a célula recebe um número com mais de 7 algarismos, dá um alerta ao usuário ficando vermelha e, eventualmente, mostrando uma mensagem de texto com informação sobre a omissão dos algarismos e o real motivo.</p>
+
+                    <p class="artigo__p artigo__p--destaque">Para um país como Moçambique, em que o número de habitantes é de pouco mais de 30 milhões (<a href="https://energypedia.info/wiki/Moçambique:_Informação_sobre_o_País" target="_blank">dados demográficos de 2019</a>), podemos presumir que, actualmente, nenhuma Unidade Sanitária tem um número mensal de dados, de algum indicador de qualquer que seja a sua natureza, acima de <span class="number-format">9999999</span>.</p>
+                </details>
+                <button class="artigo__btn-fechar artigo__btn-fechar--ajuda" title="Fechar">&times;</button>
+            </article>
+        </section>
+        <footer class="footer --no-print">
+            <div class="layout-row footer__row">
+                <nav class=footer__nav>
+                    <h4 class="footer__nav__title">Hiperligações para outros serviços afins</h4>
+                    <ul>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-tuberculose/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de Tuberculose</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-trimestral-de-apss-e-pp/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Trimestral de APSS/PP</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-consultas/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de Consultas</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-hiv-e-sida/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de HIV/SIDA</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-malaria/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de Malária</a>
+                        <li>
+                            <a href=https://quinamin.github.io/totalizador-de-resumo-mensal-de-prn-i/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de PRN I</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-saaj/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de SAAJ</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-ccd/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de CCD</a>
+                        <li>
+                            <a href=https://quinamine.github.io/totalizador-de-resumo-mensal-de-ats/index.html target=_blank class="footer__nav-link">Totalizador de Resumo Mensal de ATS</a>
+                        <li>
+                            <a href=https://quinamine.github.io/calculadora-de-doses-pediatricas/index.html target=_blank class="footer__nav-link">Calculadora de Doses Pediátricas</a>
+                        <li>
+                            <a href=https://quinamine.github.io/tarv-pediatrico/index.html target=_blank class="footer__nav-link">Doseador de Antirretrovirais</a>
+                        <li>
+                            <a href=https://quinamin.github.io/requisicao-balancete/index.html target=_blank class="footer__nav-link">Requisição/Balancete</a>
+                    </ul>
+                </nav>
+                <p class="footer__p footer__p--created-by">
+                    Criado com atenção e 💙 por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;">Adérito Félix Quinamine</a>
+                    | © <span class="footer__current-year"></span> - Totalizador de Resumo Mensal de PRN II
+                </p>
+                <a href=#root class=footer__link-back-to-top>Voltar ao topo</a>
+            </div>
+            <p class="footer__p footer__p--available-since">Disponível desde 02/01/2023. Última actualização: Abril/2024.</p>
+        </footer>
+        <div class="desfoque"></div>
+    </body>
+</html>
