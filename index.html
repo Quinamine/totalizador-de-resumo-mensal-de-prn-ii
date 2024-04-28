@@ -5,12 +5,12 @@
     <meta content="width=device-width,initial-scale=1" name=viewport>
     <title>Totalizador de Resumo Mensal de PRN II</title>
     <meta content="index, follow" name=robots>
-    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique." name=description>
+    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II, por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique." name=description>
     <meta content="Totalizador de Resumo Mensal de PRN II, Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos, Totalizador de Relatório Mensal de PRN II, Ficha de Resumo Mensal de PRN II." name=keywords>
     <meta content="Adérito Félix Quinamine" name=author>
     <meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/index.html property=og:url>
     <meta content="Totalizador de Resumo Mensal de PRN II" property=og:title>
-    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II, por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique." property=og:description>
+    <meta content="Serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II, por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique." property=og:description>
     <meta content=https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/imagens/totalizador-de-resumo-mensal-de-prn-ii.png property=og:image>
     <link href=favicon.ico rel="shortcut icon" type=image/x-icon>
     <link href=anatomia/reset.css rel=stylesheet>
@@ -131,7 +131,7 @@
                         <div class="ficha__body__col-720 --border-l-thick">
                             <div class="ficha__grid-template-col-8">
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">A</span>
+                                    <span class="ficha__num-de-linha --fw-700">A</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
@@ -139,12 +139,17 @@
                                     </span>
                                 </div>
                                 
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c1 --border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c2 --border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c3 --border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c1-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c4 --border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=a-c1c2c3c4c5 data-totaleixoxoutput=a-c6 class="a-c5 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="a-c6 --border-b --border-l-thick --border-r-thick">
+                                <input type=number min=0 data-totaleixox=la-c1-a-c5 data-totaleixoxoutput=la-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="la-c1 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=la-c1-a-c5 data-totaleixoxoutput=la-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="la-c2 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=la-c1-a-c5 data-totaleixoxoutput=la-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="la-c3 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=la-c1-a-c5 data-totaleixoxoutput=la-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="la-c4 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=la-c1-a-c5 data-totaleixoxoutput=la-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="la-c5 --border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="la-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class="ficha__grid-template-col-1">
                                 <div class="ficha__container-de-indicador --display-flex-y-center --border-r-thick --border-b">
@@ -153,23 +158,28 @@
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">B1</span>
+                                    <span class="ficha__num-de-linha --fw-700">B1</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes admitidos com <br> desnutrição aguda moderada <br> (DAM) com HIV+ e/ou TB 
                                     </span>
                                 </div>
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=b1-c1c2c3c4c5 data-totaleixoxoutput=b1-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c5 data-totaleixoyoutput=b5-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b1-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=b1-c1-a-c5 data-totaleixoxoutput=b1-c6 data-totaleixoy=b1-a-b4-c1 data-totaleixoyoutput=lb-c1 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="b2-c1 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b1-c1-a-c5 data-totaleixoxoutput=b1-c6 data-totaleixoy=b1-a-b4-c2 data-totaleixoyoutput=lb-c2 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="b2-c2 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b1-c1-a-c5 data-totaleixoxoutput=b1-c6 data-totaleixoy=b1-a-b4-c3 data-totaleixoyoutput=lb-c3 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="b2-c3 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b1-c1-a-c5 data-totaleixoxoutput=b1-c6 data-totaleixoy=b1-a-b4-c4 data-totaleixoyoutput=lb-c4 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="b2-c4 --border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b1-c1-a-c5 data-totaleixoxoutput=b1-c6 data-totaleixoy=b1-a-b4-c5 data-totaleixoyoutput=lb-c5 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="b2-c5 --border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="b1-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">B2</span>
+                                    <span class="ficha__num-de-linha --fw-700">B2</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
@@ -178,14 +188,17 @@
                                 </div>
                                 <div class=celula-n-a></div>
                                 <div class=celula-n-a></div>
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b2-c1c2c3c4c5 data-totaleixoxoutput=b2-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput="b5-c3" class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b2-c1c2c3c4c5 data-totaleixoxoutput=b2-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput="b5-c4" class="--border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=b2-c1-a-c5 data-totaleixoxoutput=b2-c6 data-totaleixoy=b1-a-b4-c3 data-totaleixoyoutput=lb-c3 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b2-c1-a-c5 data-totaleixoxoutput=b2-c6 data-totaleixoy=b1-a-b4-c4 data-totaleixoyoutput=lb-c4 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
                                 <div class=celula-n-a></div>
-                                <input type=number min=0 readonly class="b2-c6 --border-b --border-l-thick --border-r-thick">
+
+                                <input type=number min=0 readonly class="b2-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">B3</span>
+                                    <span class="ficha__num-de-linha --fw-700">B3</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
@@ -193,39 +206,49 @@
                                     </span>
                                 </div>
                                 
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=b3-c1c2c3c4c5 data-totaleixoxoutput=b3-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c5 data-totaleixoyoutput=b5-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b3-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=b3-c1-a-c5 data-totaleixoxoutput=b3-c6 data-totaleixoy=b1-a-b4-c1 data-totaleixoyoutput=lb-c1 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b3-c1-a-c5 data-totaleixoxoutput=b3-c6 data-totaleixoy=b1-a-b4-c2 data-totaleixoyoutput=lb-c2 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b3-c1-a-c5 data-totaleixoxoutput=b3-c6 data-totaleixoy=b1-a-b4-c3 data-totaleixoyoutput=lb-c3 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b3-c1-a-c5 data-totaleixoxoutput=b3-c6 data-totaleixoy=b1-a-b4-c4 data-totaleixoyoutput=lb-c4 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b3-c1-a-c5 data-totaleixoxoutput=b3-c6 data-totaleixoy=b1-a-b4-c5 data-totaleixoyoutput=lb-c5 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="b3-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">B4</span>
+                                    <span class="ficha__num-de-linha --fw-700">B4</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__child-pos--sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes admitidos com <br> desnutrição aguda grave (DAG)  <br> com HIV- ou desconhecido
                                     </span>
                                 </div>
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c1 data-totaleixoyoutput=b5-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c2 data-totaleixoyoutput=b5-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c3 data-totaleixoyoutput=b5-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=b4-c1c2c3c4c5 data-totaleixoxoutput=b4-c6 data-totaldeadmissoesc6=b1b2b3b4-c1c2c3c4c5 data-totaldeadmissoesc6output=b5-c6 data-totaleixoy=b1b2b3b4-c4 data-totaleixoyoutput=b5-c4 class="--border-b --border-l-thick">
-                                <div class=celula-n-a></div>
-                                <input type=number min=0 readonly class="b4-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=b4-c1-a-c5 data-totaleixoxoutput=b4-c6 data-totaleixoy=b1-a-b4-c1 data-totaleixoyoutput=lb-c1 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b4-c1-a-c5 data-totaleixoxoutput=b4-c6 data-totaleixoy=b1-a-b4-c2 data-totaleixoyoutput=lb-c2 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b4-c1-a-c5 data-totaleixoxoutput=b4-c6 data-totaleixoy=b1-a-b4-c3 data-totaleixoyoutput=lb-c3 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=b4-c1-a-c5 data-totaleixoxoutput=b4-c6 data-totaleixoy=b1-a-b4-c4 data-totaleixoyoutput=lb-c4 data-totalgeral=b1-a-b4-c1-a-c5 data-totalgeraloutput=lb-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <div class="celula-n-a"></div>
+
+                                <input type=number min=0 readonly class="b4-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class="ficha__grid-template-col-8 ficha__grid-template-col-8--realce-padrao">
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b">
                                     <span class="--fw-700">Total Admissões (B1+B2+B3+B4)</span>
                                 </div>
-                                <input type=number min=0 readonly class="b5-c1 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b5-c2 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b5-c3 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b5-c4 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b5-c5 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="b5-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c1 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c2 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c3 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c4 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c5 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c6 --border-r-thick --border-b --border-l-thick">
                             </div>
                             <div class="ficha__grid-template-col-1">
                                 <div class="ficha__container-de-indicador --display-flex-y-center --border-r-thick --border-b">
@@ -235,39 +258,49 @@
                             
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">C1</span>
+                                    <span class="ficha__num-de-linha --fw-700">C1</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes curados
                                     </span>
                                 </div>
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc1-c1c2c3c4c5 data-totaleixoxoutput=lc1-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc1-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=c1-c1-a-c5 data-totaleixoxoutput=c1-c6 data-totaleixoy=c1-a-c4-c1 data-totaleixoyoutput=lc-c1 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c1-c1-a-c5 data-totaleixoxoutput=c1-c6 data-totaleixoy=c1-a-c4-c2 data-totaleixoyoutput=lc-c2 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c1-c1-a-c5 data-totaleixoxoutput=c1-c6 data-totaleixoy=c1-a-c4-c3 data-totaleixoyoutput=lc-c3 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c1-c1-a-c5 data-totaleixoxoutput=c1-c6 data-totaleixoy=c1-a-c4-c4 data-totaleixoyoutput=lc-c4 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c1-c1-a-c5 data-totaleixoxoutput=c1-c6 data-totaleixoy=c1-a-c4-c5 data-totaleixoyoutput=lc-c5 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="c1-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">C2</span>
+                                    <span class="ficha__num-de-linha --fw-700">C2</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes que abandonaram <br>  o tratamento
                                     </span>
                                 </div>
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc2-c1c2c3c4c5 data-totaleixoxoutput=lc2-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc2-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=c2-c1-a-c5 data-totaleixoxoutput=c2-c6 data-totaleixoy=c1-a-c4-c1 data-totaleixoyoutput=lc-c1 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c2-c1-a-c5 data-totaleixoxoutput=c2-c6 data-totaleixoy=c1-a-c4-c2 data-totaleixoyoutput=lc-c2 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c2-c1-a-c5 data-totaleixoxoutput=c2-c6 data-totaleixoy=c1-a-c4-c3 data-totaleixoyoutput=lc-c3 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c2-c1-a-c5 data-totaleixoxoutput=c2-c6 data-totaleixoy=c1-a-c4-c4 data-totaleixoyoutput=lc-c4 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c2-c1-a-c5 data-totaleixoxoutput=c2-c6 data-totaleixoy=c1-a-c4-c5 data-totaleixoyoutput=lc-c5 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="c2-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">C3</span>
+                                    <span class="ficha__num-de-linha --fw-700">C3</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
@@ -275,16 +308,21 @@
                                     </span>
                                 </div>
                                 
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc3-c1c2c3c4c5 data-totaleixoxoutput=lc3-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc3-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=c3-c1-a-c5 data-totaleixoxoutput=c3-c6 data-totaleixoy=c1-a-c4-c1 data-totaleixoyoutput=lc-c1 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c3-c1-a-c5 data-totaleixoxoutput=c3-c6 data-totaleixoy=c1-a-c4-c2 data-totaleixoyoutput=lc-c2 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c3-c1-a-c5 data-totaleixoxoutput=c3-c6 data-totaleixoy=c1-a-c4-c3 data-totaleixoyoutput=lc-c3 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c3-c1-a-c5 data-totaleixoxoutput=c3-c6 data-totaleixoy=c1-a-c4-c4 data-totaleixoyoutput=lc-c4 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c3-c1-a-c5 data-totaleixoxoutput=c3-c6 data-totaleixoy=c1-a-c4-c5 data-totaleixoyoutput=lc-c5 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="c3-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">C4</span>
+                                    <span class="ficha__num-de-linha --fw-700">C4</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
@@ -292,51 +330,61 @@
                                     </span>
                                 </div>
                                
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc4-c1c2c3c4c5 data-totaleixoxoutput=lc4-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 class="lc4-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=c4-c1-a-c5 data-totaleixoxoutput=c4-c6 data-totaleixoy=c1-a-c4-c1 data-totaleixoyoutput=lc-c1 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c4-c1-a-c5 data-totaleixoxoutput=c4-c6 data-totaleixoy=c1-a-c4-c2 data-totaleixoyoutput=lc-c2 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c4-c1-a-c5 data-totaleixoxoutput=c4-c6 data-totaleixoy=c1-a-c4-c3 data-totaleixoyoutput=lc-c3 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c4-c1-a-c5 data-totaleixoxoutput=c4-c6 data-totaleixoy=c1-a-c4-c4 data-totaleixoyoutput=lc-c4 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c4-c1-a-c5 data-totaleixoxoutput=c4-c6 data-totaleixoy=c1-a-c4-c5 data-totaleixoyoutput=lc-c5 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="c4-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class=ficha__grid-template-col-8>
                                 <div class="--display-flex-xy-center --border-b">
-                                    <span class="--fw-700">C5</span>
+                                    <span class="ficha__num-de-linha --fw-700">C5</span>
                                 </div>
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes transferidos para <br> outro sector ou US
                                     </span>
                                 </div>
-                                <input type=number min=0 data-totaldetransicoes=a-c1-corte-b5-c1-corte-lc6-c1 data-totaldetransicoesoutput=d-c1 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c1 data-totaleixoyoutput=lc6-c1 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c2-corte-b5-c2-corte-lc6-c2 data-totaldetransicoesoutput=d-c2 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c2 data-totaleixoyoutput=lc6-c2 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c3-corte-b5-c3-corte-lc6-c3 data-totaldetransicoesoutput=d-c3 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c3 data-totaleixoyoutput=lc6-c3 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c4-corte-b5-c4-corte-lc6-c4 data-totaldetransicoesoutput=d-c4 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c4 data-totaleixoyoutput=lc6-c4 class="--border-b --border-l-thick">
-                                <input type=number min=0 data-totaldetransicoes=a-c5-corte-b5-c5-corte-lc6-c5 data-totaldetransicoesoutput=d-c5 data-totaleixox=lc5-c1c2c3c4c5 data-totaleixoxoutput=lc5-c6 data-totaldeadmissoesc6=lc1c2c3c4c5-c1c2c3c4c5 data-totaldeadmissoesc6output=lc6-c6 data-totaleixoy=lc1c2c3c4c5-c5 data-totaleixoyoutput=lc6-c5 class="--border-b --border-l-thick">
-                                <input type=number min=0 class="lc5-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 data-totaleixox=c5-c1-a-c5 data-totaleixoxoutput=c5-c6 data-totaleixoy=c1-a-c4-c1 data-totaleixoyoutput=lc-c1 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c1+lb-c1-menos-lc-c1 data-transicoesoutput="ld-c1" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c5-c1-a-c5 data-totaleixoxoutput=c5-c6 data-totaleixoy=c1-a-c4-c2 data-totaleixoyoutput=lc-c2 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c2+lb-c2-menos-lc-c2 data-transicoesoutput="ld-c2" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c5-c1-a-c5 data-totaleixoxoutput=c5-c6 data-totaleixoy=c1-a-c4-c3 data-totaleixoyoutput=lc-c3 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c3+lb-c3-menos-lc-c3 data-transicoesoutput="ld-c3" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c5-c1-a-c5 data-totaleixoxoutput=c5-c6 data-totaleixoy=c1-a-c4-c4 data-totaleixoyoutput=lc-c4 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c4+lb-c4-menos-lc-c4 data-transicoesoutput="ld-c4" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 data-totaleixox=c5-c1-a-c5 data-totaleixoxoutput=c5-c6 data-totaleixoy=c1-a-c4-c5 data-totaleixoyoutput=lc-c5 data-totalgeral=c1-a-c4-c1-a-c5 data-totalgeraloutput=lc-c6 data-transicoes=la-c5+lb-c5-menos-lc-c5 data-transicoesoutput="ld-c5" data-totaldetransicoes=la-c6+lb-c6-menos-lc-c6 data-totaldetransicoesoutput="ld-c6" class="--border-b --border-l-thick" />
+
+                                <input type=number min=0 readonly class="c5-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
                             <div class="ficha__grid-template-col-8 ficha__grid-template-col-8--realce-padrao">
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b">
                                     <span class="--fw-700">Total Altas (C1+C2+C3+C4+C5)</span>
                                 </div>
-                                <input type=number min=0 readonly class="lc6-c1 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc6-c2 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc6-c3 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc6-c4 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc6-c5 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc6-c6  --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c1 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c2 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c3 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c4 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c5 --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c6  --border-r-thick --border-b --border-l-thick">
                             </div>
                             <div class="ficha__grid-template-col-8">
                                 <div class="ficha__container-de-indicador ficha__child-pos--sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b-thick">
                                     <span class="--fw-700">Nº de pacientes que transitam para o <br> mês seguinte (A+B-C)</span>
                                 </div>
                                     
-                                <input type=number min=0 readonly class="d d-c1 --border-b-thick --border-l-thick">
-                                <input type=number min=0 readonly class="d d-c2 --border-b-thick --border-l-thick">
-                                <input type=number min=0 readonly class="d d-c3 --border-b-thick --border-l-thick">
-                                <input type=number min=0 readonly class="d d-c4 --border-b-thick --border-l-thick">
-                                <input type=number min=0 readonly class="d d-c5 --border-b-thick --border-l-thick">
-                                <input type=number min=0 readonly class="d d-c6 --border-r-thick --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="ld-c1 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="ld-c2 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="ld-c3 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="ld-c4 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="ld-c5 --border-b-thick --border-l-thick">
+                                <input type=number min=0 readonly class="ld-c6 --border-r-thick --border-b-thick --border-l-thick">
                             </div>
                         </div>
                         <div class="ficha__body__col-110 --border-l --border-r">
@@ -425,8 +473,9 @@
             </div>
 
             <div class="dialog-box-ir-para --display-flex-y-center">
-                <input type=number min=1 class=dialog-box-ir-para__input-linha max=73 placeholder="Ir para a linha (número da linha)">
-                <button class=dialog-box-ir-para__btn-fechar title=Fechar>×</button>
+                <input type=text class=dialog-box-ir-para__input-linha max=63 placeholder="Referência da linha (ex.: C5)">
+                <button class="dialog-box-ir-para__btn-ir" title="Ir para a linha">Ir</button>
+                <button class=dialog-box-ir-para__btn-fechar title=Fechar>&times;</button>
             </div>
             <div class="dialog-box-esvaziar-ficha">
                 <h3 class="dialog-box-esvaziar-ficha__titulo --fw-700">Esvaziar ficha</h3>
@@ -460,9 +509,6 @@
                         <input type=checkbox id=checkbox-data checked data-inputadicionalid=input-data>
                         <label for=checkbox-data>Data</label>
                     <li>
-                        <input type=checkbox id=checkbox-nome checked data-inputadicionalid=input-nome>
-                        <label for=checkbox-nome>Nome</label>
-                    <li>
                         <input type=checkbox id=checkbox-assinatura checked data-inputadicionalid=input-assinatura>
                         <label for=checkbox-assinatura>
                             Assinatura
@@ -486,7 +532,7 @@
                 </figure>
                 
                 <p>
-                    O <b>Totalizador de Resumo Mensal de PRN II</b> é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes &ge; 15 anos), por meio do cálculo automático dos totais, com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique.
+                    O <b>Totalizador de Resumo Mensal de PRN II</b> é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes &ge; 15 anos), por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique.
                 </p>
 
                 <h3 class="artigo__titulo artigo__titulo--nivel-2">Objectivos</h3>
@@ -503,7 +549,7 @@
                 <ul class="artigo__lista artigo__ul">
                     <li>Um telemóvel ou computador com acesso à internet.</li>
                     <li>Ter colhido os dados de todos os indicadores da ficha nas fontes primárias (livro(s) de registo) da sua Unidade Sanitária.</li>
-                    <li>E por fim, preencher os dados nas células correspondentes quanto ao indicador e variáveis (sexo e faixa etária), e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.</li>
+                    <li>E por fim, preencher os dados nas células correspondentes quanto ao indicador e as outras variáveis, e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.</li>
                 </ul>
 
                 <p class="artigo__p--destaque">A utilização do totalizador é, de facto, uma garantia de um resumo correctamente totalizado, porém, isso simplesmente, não define a qualidade do resumo. Você é o único responsável pela veracidade, lógica e concordância dos dados preenchidos e, portanto, pela qualidade do resumo. O totalizador só se limita a calcular os totais baseando-se exactamente nos dados que você fornece.</p>
@@ -526,7 +572,7 @@
                 <h3 class="artigo__titulo artigo__titulo--nivel-2">Limitações do totalizador</h3>
                     
                 <ul class="artigo__lista artigo__ul">
-                    <li>Não alerta sobre discrepância de dados, portanto, a análise da qualidade e lógica do resumo é inteiramente dependente do usuário;</li>
+                    <li>Não alerta sobre discrepância de dados, portanto, a análise da concordância dos dados é inteiramente dependente do usuário;</li>
                     <li>Disponibilidade remota (é necessário um telemóvel ou computador com acesso à internet para ser acessado).</li>
                 </ul>
                 <button class="artigo__btn-fechar artigo__btn-fechar--sobre" title="Fechar">&times;</button>
@@ -537,11 +583,11 @@
 
                 <details>
                     <summary>Realçar totais</summary>
-                    <p>Adiciona um fundo amarelo a todas as células dos totais. Estas têm o acesso interdito e a funcionalidade de realçá-las, permite facilmente distinguir estas de outras células. Muito útil em dispositivos móveis.</p>
+                    <p>Adiciona um fundo cinzento a todas as células dos totais. Estas têm o acesso interdito e a funcionalidade de realçá-las, permite facilmente distinguir estas de outras células. Muito útil em dispositivos móveis.</p>
                 </details>
                 <details>
                     <summary >Ir para a linha...</summary>
-                    <p>Abre um campo no qual pode digitar um número de linha no intervalo de 1 à 73 e, uma vez digitado o número, a página rola até a linha correspondente ao número.</p>
+                    <p>Abre um campo no qual pode digitar um número de linha no formato <b>LETRANÚMERO</b> (ex.: <b>C5</b>) e, uma vez digitado o número, a página rola até a linha correspondente ao número.</p>
                 </details>
                 <details>
                     <summary>Esvaziar ficha</summary>

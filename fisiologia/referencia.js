@@ -1,41 +1,55 @@
+"use strict"
+
 const referencia = {
+    retornarIndicador(inputTarget) {
+        const classColIndicadores = inputTarget.parentElement.dataset.indicadores;
+        const indicadores = document.querySelectorAll(`.${classColIndicadores} span`);
+      
+        const inputParent__children = inputTarget.parentElement.children;
 
-    retornarColuna(celulaFocada) {
-        const colunas = ["TRIAGEM", "TB", "CPN", "CPP", "TARV"];
-        const celulaFocadaParent = celulaFocada.parentElement;
-        const celulaFocadaEirmas = celulaFocadaParent.children;
-        let celulaFocadaIndex;
-
-        for (let i=0; i<celulaFocadaEirmas.length; i++) {
-            if(celulaFocada === celulaFocadaEirmas[i]) {
-                celulaFocadaIndex = i;
+        let inputTargetIndex;
+        for (let i = 0; i < inputParent__children.length; i++) {
+            if(inputTarget === inputParent__children[i]) {
+                inputTargetIndex = i;
             }
         }
 
-        colunaOutput.textContent = colunas[celulaFocadaIndex - 2]; // O 2 é referente as primeiras duas span's da linha;
+        const indicadorOutput = document.querySelector(".reference-row__output--indicador");
+        indicadorOutput.value = indicadores[inputTargetIndex].textContent;
+        
     },
-    
-    retornarNulo() {
-        colunaOutput.textContent = ""
+
+    retornarFaixaEtaria(inputTarget) {
+        const faixaEtariaOutput = document.querySelector(".reference-row__output--idade");
+
+        let faixaEtaria = inputTarget.parentElement.dataset.faixaetaria;
+        faixaEtariaOutput.value = faixaEtaria;
+    },
+
+    retornarSexo(inputTarget) {
+        const faixaEtariaOutput = document.querySelector(".reference-row__output--sexo");
+
+        let sexo = inputTarget.parentElement.dataset.sexo;
+        faixaEtariaOutput.value = sexo;
+    },
+
+    retornarVazio() {
+        const outputs = document.querySelectorAll(".reference-row__output");
+        for (const o of outputs) o.value = "";
     }
 }
 
-let colunaOutput;
-window.addEventListener("load", () => {
-    colunaOutput = document.querySelector(".ref-de-coluna");
-
-    celulas_de_entrada.forEach ( cel => {
-        
-        cel.addEventListener("focusin", () => {
-            referencia.retornarColuna(cel);
-            cel.hasAttribute("readonly") && referencia.retornarNulo();
+function events() {
+    const gridInputs = document.querySelectorAll("[data-totalgeraleixox], .grid-extra__input");
+    gridInputs.forEach( gi => {
+        gi.addEventListener("focus", () => {
+            referencia.retornarIndicador(gi);
+            referencia.retornarFaixaEtaria(gi);
+            referencia.retornarSexo(gi);
         });
-
-        cel.addEventListener("focusout", () => {
-            referencia.retornarNulo();
-        });
-
     });
 
-    window.addEventListener("scroll",()=>{let e=document.querySelector("div.linha-de-referencia"),t=document.querySelector(".bounding-reference");t.getBoundingClientRect().bottom<0?e.classList.add("off"):e.classList.remove("off")});
-})
+    gridInputs.forEach( gi => gi.addEventListener("focusout", referencia.retornarVazio));
+}
+
+window.onload = events;

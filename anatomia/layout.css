@@ -485,7 +485,7 @@ input[data-totalgeraleixox]:focus,
 /* Manipulacao com JS */
 @media screen {
     .--realcar-totais {
-        background-color: var(--yellow) !important;
+        background-color: var(--gray--c) !important;
     }
 }
 
@@ -840,6 +840,7 @@ details mark {
     background-color: var(--gray--d);
     text-align: left;
     font-size: 12px;
+    font-weight: 700;
 }
 
 .dialog-box-ir-para__input-linha:focus {
@@ -847,7 +848,7 @@ details mark {
 }
 
 .dialog-box-ir-para__btn-ir {
-    font-weight: bold;
+    font-weight: 700;
     margin: 0 2px;
     border-radius: 1px;
     font-size: 14px;
