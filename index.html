@@ -87,19 +87,23 @@
                     <div class=ficha__linha-de-localizacao>
                         <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
                             <label for=input-provincia>Província:</label>
-                            <input id=input-provincia class="input-nao-celular --border-b --fw-700">
+                            <input id=input-provincia list="datalist-provincias" class="input-nao-celular --border-b --fw-700">
+                            <datalist id="datalist-provincias"></datalist>
                         </div>
                         <div class="ficha__linha-de-localizacao__col  --display-flex-y-center">
                             <label for=input-us>US:</label>
-                            <input id=input-us class="input-nao-celular --border-b --fw-700">
+                            <input id=input-us list="datalist-us" class="input-nao-celular --border-b --fw-700">
+                            <datalist id="datalist-us"></datalist>
                         </div>
                         <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
                             <label for=input-distrito>Distrito:</label>
-                            <input id=input-distrito class="input-nao-celular --border-b --fw-700">
+                            <input id=input-distrito list="datalist-distritos" class="input-nao-celular --border-b --fw-700">
+                            <datalist id="datalist-distritos"></datalist>
                         </div>
                         <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
                             <label for=input-mes>Mês:</label>
-                            <input id=input-mes class="input-nao-celular --border-b --fw-700">
+                            <input id=input-mes list="datalist-meses" class="input-nao-celular --border-b --fw-700">
+                            <datalist id="datalist-meses"></datalist>
                         </div>
                     </div>
                 </header>
@@ -640,9 +644,9 @@
                 </details>
                 <details class="artigo__details-motivo-de-red-cells">
                     <summary>Algumas células mudaram de cor de fundo para vermelho</summary>
-                    <p>As células do totalizador têm um tamanho para conter, visivelmente, 7 algarismos no máximo, isto é, mostram valores até, no máximo, <span class="number-format">9999999</span>. Quando a célula recebe um número com mais de 7 algarismos, dá um alerta ao usuário ficando vermelha e, eventualmente, mostrando uma mensagem de texto com informação sobre a omissão dos algarismos e o real motivo.</p>
+                    <p>As células do totalizador têm um tamanho para conter, visivelmente, 9 algarismos no máximo, isto é, mostram valores até, no máximo, <span class="number-format">999999999</span>. Quando a célula recebe um número com mais de 9 algarismos, dá um alerta ao usuário ficando vermelha e, eventualmente, mostrando uma mensagem de texto com informação sobre a omissão dos algarismos e o real motivo.</p>
 
-                    <p class="artigo__p artigo__p--destaque">Para um país como Moçambique, em que o número de habitantes é de pouco mais de 30 milhões (<a href="https://energypedia.info/wiki/Moçambique:_Informação_sobre_o_País" target="_blank">dados demográficos de 2019</a>), podemos presumir que, actualmente, nenhuma Unidade Sanitária tem um número mensal de dados, de algum indicador de qualquer que seja a sua natureza, acima de <span class="number-format">9999999</span>.</p>
+                    <p class="artigo__p artigo__p--destaque">Para um país como Moçambique, em que o número de habitantes é de pouco mais de 30 milhões (<a href="https://energypedia.info/wiki/Moçambique:_Informação_sobre_o_País" target="_blank">dados demográficos de 2019</a>), podemos presumir que, actualmente, nenhuma Unidade Sanitária tem um número mensal de dados, de algum indicador de qualquer que seja a sua natureza, acima de <span class="number-format">999999999</span>.</p>
                 </details>
                 <button class="artigo__btn-fechar artigo__btn-fechar--ajuda" title="Fechar">&times;</button>
             </article>

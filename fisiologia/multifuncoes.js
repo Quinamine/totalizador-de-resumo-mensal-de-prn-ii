@@ -33,12 +33,9 @@ function destacarCelulasSaturadas() {
 
     let celulasSaturadas = 0;
     for(const c of celulas) {
-        c.classList.remove("--font-small");
         c.classList.remove("celula-saturada");
         
-        if(c.value.length === 7) {
-            c.classList.add("--font-small");
-        } else if(c.value.length > 7) {
+        if(c.value.length > 9) {
             c.classList.add("celula-saturada");
             celulasSaturadas++;
         }
