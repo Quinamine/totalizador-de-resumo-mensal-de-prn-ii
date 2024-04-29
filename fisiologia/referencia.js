@@ -1,36 +1,27 @@
 "use strict"
 
 const referencia = {
-    retornarIndicador(inputTarget) {
-        const classColIndicadores = inputTarget.parentElement.dataset.indicadores;
-        const indicadores = document.querySelectorAll(`.${classColIndicadores} span`);
-      
-        const inputParent__children = inputTarget.parentElement.children;
-
+    retornarIndicadorEcoluna(inputTarget) {
+        const colunas = ["TRIAGEM", "TB", "CPN", "CPP", "TARV"];
+        const inputTargetParent = inputTarget.parentElement;
+        const inputTargetAndSiblings = inputTargetParent.children;
         let inputTargetIndex;
-        for (let i = 0; i < inputParent__children.length; i++) {
-            if(inputTarget === inputParent__children[i]) {
+
+        for (let i=0; i<inputTargetAndSiblings.length; i++) {
+            if(inputTarget === inputTargetAndSiblings[i]) {
                 inputTargetIndex = i;
             }
         }
 
+     
+        let indicador = inputTargetAndSiblings[1].querySelector("span");
+        let coluna = colunas[inputTargetIndex - 2]; // O 2 é referente as primeiras duas div's da linha;
+
         const indicadorOutput = document.querySelector(".reference-row__output--indicador");
-        indicadorOutput.value = indicadores[inputTargetIndex].textContent;
-        
-    },
+        const colunaOutput = document.querySelector(".reference-row__output--coluna");
 
-    retornarFaixaEtaria(inputTarget) {
-        const faixaEtariaOutput = document.querySelector(".reference-row__output--idade");
-
-        let faixaEtaria = inputTarget.parentElement.dataset.faixaetaria;
-        faixaEtariaOutput.value = faixaEtaria;
-    },
-
-    retornarSexo(inputTarget) {
-        const faixaEtariaOutput = document.querySelector(".reference-row__output--sexo");
-
-        let sexo = inputTarget.parentElement.dataset.sexo;
-        faixaEtariaOutput.value = sexo;
+        colunaOutput.value = coluna;
+        indicadorOutput.value = indicador.textContent;
     },
 
     retornarVazio() {
@@ -40,12 +31,10 @@ const referencia = {
 }
 
 function events() {
-    const gridInputs = document.querySelectorAll("[data-totalgeraleixox], .grid-extra__input");
+    const gridInputs = document.querySelectorAll("[data-totaleixox]");
     gridInputs.forEach( gi => {
-        gi.addEventListener("focus", () => {
-            referencia.retornarIndicador(gi);
-            referencia.retornarFaixaEtaria(gi);
-            referencia.retornarSexo(gi);
+        gi.addEventListener("focus", () => {;
+            referencia.retornarIndicadorEcoluna(gi);
         });
     });
 

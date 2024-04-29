@@ -32,35 +32,35 @@ const menu = {
 
             goToLn(numLinha) {
                 this.removeLnHighlight(); 
-                numLinha = numLinha.toUpperCase();
+                numLinha = formatarString(numLinha);
+                
                 let nL = this.numerosDeLinha;
 
                 let numLinhaMatches = false;
                 for(let i = 0; i < nL.length; i++) {
-                    if(nL[i].textContent === numLinha || 
-                        nL[i].textContent === `${numLinha})`) {
+                    if(formatarString(nL[i].textContent) === numLinha) {
                             numLinhaMatches = true;
                             let newIndex = i;
                             if(window.innerWidth > 850) newIndex -= 1;
                             i > 2 ? nL[newIndex].parentElement.scrollIntoView() : document.body.scrollIntoView();         
-                            nL[i].parentElement.classList.add("ficha__num-de-linha", "--highlight");
+                            this.highlightLnFound(nL[i].parentElement.parentElement);
                     }
                 }  
               
                 if(!numLinhaMatches) {
-                    const msg = `Nenhuma linha corresponde à pesquisa ou a referência digitada poderá não estar dentro do padrão (LETRANÚMERO, ex.: C5)`;
+                    const msg = `Nenhuma linha corresponde a referência digitada.`;
                     alertarSobre(msg);
                 }
             },
 
             highlightLnFound(lnFound) {
                 this.removeLnHighlight();
-                lnFound.classList.add("ficha__num-de-linha", "--highlight");
+                lnFound.classList.add("ficha__linha--destacar");
             },
 
             removeLnHighlight() {
                 for(const num of this.numerosDeLinha) {
-                    num.parentElement.classList.remove("ficha__num-de-linha", "--highlight");
+                    num.parentElement.parentElement.classList.remove("ficha__linha--destacar");
                 }
             }
         }
@@ -241,7 +241,7 @@ function eventos() {
     // PARTILHAR 
     const data = {
         title: "Totalizador de Resumo Mensal de PRN II",
-        text: "O Totalizador de Resumo Mensal de PRN II é um serviço online gratuito, que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos), por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique.",
+        text: "O Totalizador de Resumo Mensal de PRN II é um serviço online gratuito que auxilia na elaboração, como o nome sugere, do resumo mensal de PRN II (Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos), por meio do cálculo automático dos totais com base nos dados preenchidos pelo usuário. Foi criado de acordo com o modelo da ficha de resumo mensal de PRN II actualmente vigente no Serviço Nacional de Saúde em Moçambique.",
         url: "https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/index.html"
     }
 

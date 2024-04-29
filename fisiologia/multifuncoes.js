@@ -34,7 +34,6 @@ function destacarCelulasSaturadas() {
     let celulasSaturadas = 0;
     for(const c of celulas) {
         c.classList.remove("celula-saturada");
-        
         if(c.value.length > 9) {
             c.classList.add("celula-saturada");
             celulasSaturadas++;
