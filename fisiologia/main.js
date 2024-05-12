@@ -87,7 +87,6 @@ function escutarEventos() {
     gridInputs.forEach( gi => {
         gi.addEventListener("input", () => {
             totalizador.filtrarEtotalizarCelulas(gi);
-            totalizador.totalizarPacientesQueTransitam(gi);
         });
         gi.value !== "" && totalizador.filtrarEtotalizarCelulas(gi);
     });

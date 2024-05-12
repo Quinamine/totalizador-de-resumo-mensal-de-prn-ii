@@ -95,7 +95,7 @@ const menu = {
 
             confirmar() {
                 const gridInputs  = document.querySelectorAll("[data-totaleixox], [readonly]");
-                const dadosAdicionais__checkboxes = document.querySelectorAll("[data-inputadicionalid]");
+                const dadosAdicionais__checkboxes = document.querySelectorAll("[data-for]");
        
                 for (let i = 0; i < gridInputs.length; i++) {
                     gridInputs[i].value = "";
@@ -104,7 +104,7 @@ const menu = {
 
                 for (const cb of dadosAdicionais__checkboxes) {                    
                     if(cb.checked) {
-                        let id = cb.dataset.inputadicionalid;
+                        let id = cb.dataset.for
                         let inputAdicional = document.getElementById(`${id}`);
                         inputAdicional.value = "";
                         localStorage.removeItem(`${keyPrefix}-${inputAdicional.id}`);
@@ -117,14 +117,14 @@ const menu = {
 
     imprimirFicha() {
         const comentarios = document.querySelector(".main__campo-de-nota");
-        comentarios.value === "" && comentarios.parentElement.classList.add("--no-print");
+        comentarios.value === "" ? comentarios.parentElement.classList.add("--no-print") : comentarios.classList.remove("--no-print");
         window.print()
     },
 
     abrirArtigo(artigo) {
         const artigoSobre = document.querySelector(".artigo--sobre");
         const artigoAjuda = document.querySelector(".artigo--ajuda");
-        const body = document.querySelector(".body");
+        const body = document.querySelector("body");
 
         artigo === "sobre" ? 
         artigoSobre.classList.add("--open") : 
@@ -137,7 +137,7 @@ const menu = {
     fecharArtigo(artigo) {
         const artigoSobre = document.querySelector(".artigo--sobre");
         const artigoAjuda = document.querySelector(".artigo--ajuda");
-        const body = document.querySelector(".body");
+        const body = document.querySelector("body");
 
         artigo === "sobre" && artigoSobre.classList.remove("--open");
 
@@ -167,7 +167,7 @@ function eventos() {
     }
 
     // IR PARA LINHA
-    const btnAbrirIrPara = document.querySelector(".header__nav__btn--ir-para");
+    const btnAbrirIrPara = document.querySelector(".header__menu__btn--ir-para");
     btnAbrirIrPara.addEventListener("click", menu.irParaLinha().abrirDialogBox);
 
     const btnFecharIrPara = document.querySelector(".dialog-box-ir-para__btn-fechar");
@@ -194,7 +194,7 @@ function eventos() {
     });
 
     // ESVAZIAR FICHA 
-    const btnEsvaziarFicha = document.querySelector(".header__nav__btn--esvaziar-ficha");
+    const btnEsvaziarFicha = document.querySelector(".header__menu__btn--esvaziar-ficha");
     btnEsvaziarFicha.addEventListener("click", menu.esvaziarFicha().abrirDialogBox);
 
     const btnCancelar = document.querySelector(".dialog-box-esvaziar-ficha__btn--cancelar");
@@ -204,11 +204,11 @@ function eventos() {
     btnConfirmar.addEventListener("click", menu.esvaziarFicha().confirmar);
 
     // IMPRIMIR 
-    const btnImprimir = document.querySelector(".header__nav__btn--imprimir");
+    const btnImprimir = document.querySelector(".header__menu__btn--imprimir");
     btnImprimir.addEventListener("click", menu.imprimirFicha);
 
     // Artigos
-    const btnAbrirSobre = document.querySelector(".header__nav__btn--sobre");
+    const btnAbrirSobre = document.querySelector(".header__menu__btn--sobre");
     btnAbrirSobre.addEventListener("click", () => menu.abrirArtigo("sobre"));
 
     const btnFecharSobre = document.querySelector(".artigo__btn-fechar--sobre")
@@ -219,7 +219,7 @@ function eventos() {
 
         const itsMobile = window.innerWidth < 1024;
         const articleIsOpen = artigoSobre.matches(".--open");
-        const body = document.querySelector(".body");
+        const body = document.querySelector("body");
 
         if(itsMobile && articleIsOpen) {
             desfoqueDoFundo("focar");
@@ -232,7 +232,7 @@ function eventos() {
         }       
     });
 
-    const btnAbrirAjuda = document.querySelector(".header__nav__btn--ajuda");
+    const btnAbrirAjuda = document.querySelector(".header__menu__btn--ajuda");
     btnAbrirAjuda.addEventListener("click", () => menu.abrirArtigo("ajuda"));
 
     const btnFecharAjuda = document.querySelector(".artigo__btn-fechar--ajuda")
@@ -245,7 +245,7 @@ function eventos() {
         url: "https://quinamine.github.io/totalizador-de-resumo-mensal-de-prn-ii/index.html"
     }
 
-    const btnPartilhar = document.querySelector(".header__nav__btn--partilhar");
+    const btnPartilhar = document.querySelector(".header__menu__btn--partilhar");
     btnPartilhar.addEventListener("click", () => {
         try {
             navigator.share(data).then(()=>console.log("Totalizador partilhado com sucesso."))
