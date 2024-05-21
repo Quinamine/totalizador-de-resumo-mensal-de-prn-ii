@@ -29,6 +29,10 @@ blockquote,q {
     quotes: none
 }
 
+abbr {
+    text-decoration: none;
+}
+
 strong {
     font-weight: 700;
 }
