@@ -31,14 +31,14 @@ const referencia = {
 }
 
 function events() {
-    const gridInputs = document.querySelectorAll("[data-totaleixox]");
-    gridInputs.forEach( gi => {
-        gi.addEventListener("focus", () => {;
-            referencia.retornarIndicadorEcoluna(gi);
+    const inputsCelulares = document.querySelectorAll("[data-totaleixox]");
+    inputsCelulares.forEach( inputCelular => {
+        inputCelular.addEventListener("focus", () => {;
+            referencia.retornarIndicadorEcoluna(inputCelular);
         });
     });
 
-    gridInputs.forEach( gi => gi.addEventListener("focusout", referencia.retornarVazio));
+    inputsCelulares.forEach( inputCelular => inputCelular.addEventListener("focusout", referencia.retornarVazio));
 }
 
 window.onload = events;

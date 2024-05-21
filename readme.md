@@ -20,7 +20,7 @@ O **Totalizador de Resumo Mensal de PRN II** é um serviço online gratuito que 
 
 * Ter colhido os dados de todos os indicadores da ficha nas fontes primárias (livro(s) de registo de PRN para pacientes ≥ 15 anos) da sua Unidade Sanitária.
 
-* E por fim, preencher os dados nas células correspondentes em função do indicador e serviço (Triagem, TB, CPN, CPP, TARV), e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.
+* E por fim, preencher os dados nas células correspondentes em função do indicador e serviço (Triagem, TB, CPN, CPP, TARV) e consequentemente os respectivos totais são, em tempo real, correcta e automaticamente calculados.
 
 
 >[!NOTE]

@@ -107,8 +107,8 @@ window.addEventListener("load", () => {
         alertarSobre(readonlyInputsMsg);
     }));
 
-    const gridInputs = document.querySelectorAll("[data-totaleixox]");
-    gridInputs.forEach (gi => gi.addEventListener("input", destacarCelulasSaturadas));
+    const inputsCelulares = document.querySelectorAll("[data-totaleixox]");
+    inputsCelulares.forEach (inputCelular => inputCelular.addEventListener("input", destacarCelulasSaturadas));
     destacarCelulasSaturadas();
 
     

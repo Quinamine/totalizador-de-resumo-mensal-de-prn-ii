@@ -71,6 +71,15 @@
     font-weight: 700;
 }
 
+@media screen and (min-width: 1024px) {
+    .ficha__body__header {
+        position: sticky;
+        top: 0;
+        background-color: var(--yt);
+        z-index: 111;
+    }
+}
+
 .ficha__header__col-720 {
     display: grid;
     grid-template-rows: 24px 48px;
@@ -120,10 +129,10 @@
 }
 
 @media screen and (max-width: 850px) {
-    .ficha__child-pos--sticky {
+    .ficha__col--pos-sticky {
         position: sticky;
         left: -15px;
-        z-index: 99;
+        z-index: 333;
         background-color: var(--yt);
         border-right: var(--thick-border-style);
         margin-right: -2px;
