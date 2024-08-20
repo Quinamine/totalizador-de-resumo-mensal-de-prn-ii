@@ -17,15 +17,15 @@ const referencia = {
         let indicador = inputTargetAndSiblings[1].querySelector("span");
         let coluna = colunas[inputTargetIndex - 2]; // O 2 é referente as primeiras duas div's da linha;
 
-        const indicadorOutput = document.querySelector(".reference-row__output--indicador");
-        const colunaOutput = document.querySelector(".reference-row__output--coluna");
+        const indicadorOutput = document.querySelector(".reference__output--indicador");
+        const colunaOutput = document.querySelector(".reference__output--coluna");
 
         colunaOutput.value = coluna;
         indicadorOutput.value = indicador.textContent;
     },
 
     retornarVazio() {
-        const outputs = document.querySelectorAll(".reference-row__output");
+        const outputs = document.querySelectorAll(".reference__output");
         for (const o of outputs) o.value = "";
     }
 }

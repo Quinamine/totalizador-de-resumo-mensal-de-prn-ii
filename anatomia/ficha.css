@@ -3,40 +3,33 @@
     margin: 30px auto 15px;
     font-size: 13px
 }
-
 @media print {
     .ficha {
         margin-top: 15px;
     }
 }
-
 .ficha__col-de-emblema {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-
 .ficha__moldura-de-emblema {
     margin-bottom: 5px;
 }
-
 .ficha__span-descricao-de-emblema {
     display: block;
     line-height: 1.3;
     text-align: center;
 }
-
 .ficha__titulo {
     font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     margin: 20px 0;
 }
-
 .ficha__titulo__abbr {
     text-decoration: none;
 }
-
 .ficha__linha-de-localizacao {
     display: grid;
     grid-template-columns: 350px 375px;
@@ -44,33 +37,27 @@
     grid-gap: 25px 15px;
     margin-bottom: 20px;
 }
-
 .ficha__linha-de-localizacao__col {
     min-height: 20px
 }
-
 .ficha__linha-de-localizacao input {
     width: 325px;
     overflow: hidden;
     margin-left: 4px;
 }
-
 /* BODY DA FICHA */
 .ficha__body span {
     line-height: 1.3;
 }
-
 .ficha__grid-template-cols-720-110 {
     display: grid;
     grid-template-columns: 720px 110px;
     grid-column-gap: 20px;
     justify-content: center
 }
-
 .ficha__body__header {
     font-weight: 700;
 }
-
 @media screen and (min-width: 1024px) {
     .ficha__body__header {
         position: sticky;
@@ -79,55 +66,45 @@
         z-index: 111;
     }
 }
-
 .ficha__header__col-720 {
     display: grid;
     grid-template-rows: 24px 48px;
     background-color: var(--gray--d);
 }
-
 .ficha__header__col-110 {
     display: grid;
     align-items: center;
     background-color: var(--gray--d);
 }
-
 .ficha__header__linha-de-servicos {
     display: grid;
     grid-template-columns: calc(40px + 230px) repeat(6,75px)
 }
-
 .ficha__header__linha-pacientes-no-inicio-do-mes {
     padding-left: 6px
 }
-
 .ficha__header__col-110 {
     text-align: center;
     font-weight: 700
 }
-
 .ficha__grid-template-cols-8 {
     display: grid;
     grid-template-columns: 40px 230px repeat(6,75px);
     grid-template-rows: 55px
 }
-
 .ficha__grid-template-cols-8--realce-padrao,
 .ficha__grid-template-cols-8--realce-padrao input {
     background-color: var(--gray--d);
 }
-
 .ficha__container-de-indicador {
     padding-left: 6px;
 }
-
 .ficha__container-de-indicador--colspan-2 {
     grid-column: 1/3;
     justify-content: flex-end;
     padding-left: 0;
     padding-right: 6px;
 }
-
 @media screen and (max-width: 850px) {
     .ficha__col--pos-sticky {
         position: sticky;
@@ -137,32 +114,31 @@
         border-right: var(--thick-border-style);
         margin-right: -2px;
     }
-
     .ficha__container-de-indicador--colspan-2,
     .ficha__header__titulo-indicadores {
         left: -55px;
     }
-
     .ficha__header__titulo-indicadores {
         background-color: var(--gray--d);
     }
 }
-
 .ficha__grid-template-cols-1 {
     display: grid;
     grid-template-columns: 720px;
     grid-template-rows: 30px;
 }
-
 .ficha__body__col-110 {
     display: grid;
     grid-template-rows: 55px 30px repeat(5,55px) 30px repeat(7,55px);
 }
-
+[data-totaleixox]:focus,
+.input-nao-celular:focus {
+    border-bottom: 2px solid var(--blue);
+    background-color: var(--greenyellow);
+}
 .--realce-padrao {
     background-color: var(--gray--d);
 }
-
 .ficha__rodape {
     margin: 25px auto 15px;
     padding: 0 8px;
@@ -170,26 +146,33 @@
     grid-template-columns: 262px 572px;
     min-height: 20px
 }
-
 .ficha__rodape__input {
     min-width: 205px
 }
-
 .ficha__rodape__input--assinatura {
     width: 340px;
     font-weight: 700;
 }
-
 /* Manipulacao com JS */
-.ficha__linha--destacar {
-    background-color: var(--orange);
-    color: var(--cor-de-texto);
+@media screen {
+    .ficha__linha--destacar {
+        background-color: var(--orange);
+        color: var(--cor-de-texto);
+    }
 }
-
 .ficha__linha--destacar * {
     background-color: inherit;
 }
-
-.ficha__linha--destacar .celula-n-a {
+.celula--bg-color-dark,
+.ficha__linha--destacar .celula--bg-color-dark {
     background-color: var(--fullblack);
+}
+@media screen {
+    .input--realcar-totais {
+        background-color: var(--gray--c);
+    }
+}
+.input--bg-color-danger {
+    background-color: var(--cor-de-risco);
+    color: var(--yt)
 }
