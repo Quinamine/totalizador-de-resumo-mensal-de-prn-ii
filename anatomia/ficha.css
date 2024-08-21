@@ -40,7 +40,7 @@
 .ficha__linha-de-localizacao__col {
     min-height: 20px
 }
-.ficha__linha-de-localizacao input {
+.ficha__header__input {
     width: 325px;
     overflow: hidden;
     margin-left: 4px;
@@ -92,10 +92,6 @@
     grid-template-columns: 40px 230px repeat(6,75px);
     grid-template-rows: 55px
 }
-.ficha__grid-template-cols-8--realce-padrao,
-.ficha__grid-template-cols-8--realce-padrao input {
-    background-color: var(--gray--d);
-}
 .ficha__container-de-indicador {
     padding-left: 6px;
 }
@@ -111,7 +107,7 @@
         left: -15px;
         z-index: 333;
         background-color: var(--yt);
-        border-right: var(--thick-border-style);
+        border-right: 2px solid var(--cor-de-borda);
         margin-right: -2px;
     }
     .ficha__container-de-indicador--colspan-2,
@@ -135,6 +131,7 @@
 .input-nao-celular:focus {
     border-bottom: 2px solid var(--blue);
     background-color: var(--greenyellow);
+    color: var(--cor-de-texto);
 }
 .--realce-padrao {
     background-color: var(--gray--d);
@@ -154,6 +151,15 @@
     font-weight: 700;
 }
 /* Manipulacao com JS */
+.celula--bg-color-dark,
+.ficha__linha--destacar .celula--bg-color-dark {
+    background-color: var(--fullblack);
+}
+@media screen {
+    .input--realcar-totais {
+        background-color: var(--cor-de-realce-de-totais)
+    }
+}
 @media screen {
     .ficha__linha--destacar {
         background-color: var(--orange);
@@ -162,15 +168,6 @@
 }
 .ficha__linha--destacar * {
     background-color: inherit;
-}
-.celula--bg-color-dark,
-.ficha__linha--destacar .celula--bg-color-dark {
-    background-color: var(--fullblack);
-}
-@media screen {
-    .input--realcar-totais {
-        background-color: var(--gray--c);
-    }
 }
 .input--bg-color-danger {
     background-color: var(--cor-de-risco);

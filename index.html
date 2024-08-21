@@ -38,7 +38,7 @@
         <header class="header --no-print">
             <div class="layout-row layout-row--of-header layout-row--no-padding">
                 <a href="index.html" id="logo">
-                    Totalizador de Resumo <span class="logo__snippet--hide-on-screen-til-360">Mensal</span>
+                    Totalizador de Resumo <span class="logo__snippet--hide-on-screen-til-359px">Mensal</span>
                     de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos" class="header__child--cursor">PRN II</abbr>
                 </a>
                 <div role="navigation" class="header__menu --display-flex-y-center">
@@ -88,22 +88,22 @@
                     <div class=ficha__linha-de-localizacao>
                         <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
                             <label for=input-provincia>Província:</label>
-                            <input id=input-provincia list="datalist-provincias" class="input-nao-celular --border-b --fw-700">
+                            <input id=input-provincia list="datalist-provincias" class="ficha__header__input input-nao-celular --border-b --fw-700">
                             <datalist id="datalist-provincias"></datalist>
                         </div>
                         <div class="ficha__linha-de-localizacao__col  --display-flex-y-center">
                             <label for=input-us>US:</label>
-                            <input id=input-us list="datalist-us" class="input-nao-celular --border-b --fw-700">
+                            <input id=input-us list="datalist-us" class="ficha__header__input input-nao-celular --border-b --fw-700">
                             <datalist id="datalist-us"></datalist>
                         </div>
                         <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
                             <label for=input-distrito>Distrito:</label>
-                            <input id=input-distrito list="datalist-distritos" class="input-nao-celular --border-b --fw-700">
+                            <input id=input-distrito list="datalist-distritos" class="ficha__header__input input-nao-celular --border-b --fw-700">
                             <datalist id="datalist-distritos"></datalist>
                         </div>
                         <div class="ficha__linha-de-localizacao__col --display-flex-y-center">
                             <label for=input-mes>Mês:</label>
-                            <input id=input-mes list="datalist-meses" class="input-nao-celular --border-b --fw-700">
+                            <input id=input-mes list="datalist-meses" class="ficha__header__input input-nao-celular --border-b --fw-700">
                             <datalist id="datalist-meses"></datalist>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">A</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes que transitaram do <br> mês anterior para este mês 
                                     </span>
@@ -165,7 +165,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">B1</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes admitidos com <br> desnutrição aguda moderada <br> (DAM) com HIV+ e/ou TB 
                                     </span>
@@ -186,7 +186,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">B2</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes admitidos com <br> desnutrição aguda moderada <br> (DAM) com HIV- ou desconhecido
                                     </span>
@@ -205,7 +205,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">B3</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes admitidos com <br> desnutrição aguda grave (DAG) <br> com HIV+
                                     </span>
@@ -244,16 +244,16 @@
 
                                 <input type=number min=0 readonly class="b4-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
-                            <div class="ficha__grid-template-cols-8 ficha__grid-template-cols-8--realce-padrao">
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b">
+                            <div class="ficha__grid-template-cols-8">
+                                <div class="ficha__container-de-indicador ficha__container-de-indicador--colspan-2 ficha__col--pos-sticky  --display-flex-y-center --border-b --realce-padrao">
                                     <span class="--fw-700">Total Admissões (B1+B2+B3+B4)</span>
                                 </div>
-                                <input type=number min=0 readonly class="lb-c1 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lb-c2 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lb-c3 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lb-c4 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lb-c5 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lb-c6 --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lb-c1 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lb-c2 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lb-c3 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lb-c4 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lb-c5 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lb-c6 --border-r-thick --border-b --border-l-thick --realce-padrao">
                             </div>
                             <div class="ficha__grid-template-cols-1">
                                 <div class="ficha__container-de-indicador --display-flex-y-center --border-r-thick --border-b">
@@ -265,7 +265,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">C1</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes curados
                                     </span>
@@ -286,7 +286,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">C2</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes que abandonaram <br>  o tratamento
                                     </span>
@@ -307,7 +307,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">C3</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de óbitos
                                     </span>
@@ -329,7 +329,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">C4</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes referidos para o  <br> TDI
                                     </span>
@@ -351,7 +351,7 @@
                                 <div class="--display-flex-xy-center --border-b">
                                     <span class="ficha__num-de-linha --fw-700">C5</span>
                                 </div>
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  --display-flex-y-center --border-l --border-b">
+                                <div class="ficha__container-de-indicador ficha__col--pos-sticky --display-flex-y-center --border-l --border-b">
                                     <span>
                                         Nº de pacientes transferidos para <br> outro sector ou US
                                     </span>
@@ -368,19 +368,19 @@
 
                                 <input type=number min=0 readonly class="c5-c6 --border-b --border-l-thick --border-r-thick" />
                             </div>
-                            <div class="ficha__grid-template-cols-8 ficha__grid-template-cols-8--realce-padrao">
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b">
+                            <div class="ficha__grid-template-cols-8">
+                                <div class="ficha__container-de-indicador ficha__container-de-indicador--colspan-2 ficha__col--pos-sticky --display-flex-y-center --border-b --realce-padrao">
                                     <span class="--fw-700">Total Altas (C1+C2+C3+C4+C5)</span>
                                 </div>
-                                <input type=number min=0 readonly class="lc-c1 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc-c2 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc-c3 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc-c4 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc-c5 --border-b --border-l-thick">
-                                <input type=number min=0 readonly class="lc-c6  --border-r-thick --border-b --border-l-thick">
+                                <input type=number min=0 readonly class="lc-c1 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lc-c2 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lc-c3 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lc-c4 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lc-c5 --border-b --border-l-thick --realce-padrao">
+                                <input type=number min=0 readonly class="lc-c6  --border-r-thick --border-b --border-l-thick --realce-padrao">
                             </div>
                             <div class="ficha__grid-template-cols-8">
-                                <div class="ficha__container-de-indicador ficha__col--pos-sticky  ficha__container-de-indicador--colspan-2 --display-flex-y-center --border-b-thick">
+                                <div class="ficha__container-de-indicador ficha__container-de-indicador--colspan-2 ficha__col--pos-sticky --display-flex-y-center --border-b-thick">
                                     <span class="--fw-700">Nº de pacientes que transitam para o <br> mês seguinte (A+B-C)</span>
                                 </div>
                                     
@@ -586,7 +586,7 @@
 
                 <details class="artigo__details">
                     <summary class="details__summary">Realçar totais</summary>
-                    <p>Adiciona cor de fundo cinzenta a todas as células dos totais. Essas têm o acesso interdito e a funcionalidade de realçá-las, permite distinguí-las facilmente das outras células. Muito útil em celulares.</p>
+                    <p>Adiciona cor de fundo amarela às células dos totais. Essas têm o acesso interdito e a funcionalidade de realçá-las, permite distinguí-las facilmente das outras células. Muito útil em celulares.</p>
                     <p class="artigo__p--destaque --sem-sombra">A cor de realce de fundo  das células não afecta a impressão.</p>
                 </details>
                 <details class="artigo__details">
@@ -640,12 +640,12 @@
                 </details>
                 <details class="artigo__details artigo__details--border-b artigo__details--motivo-de-celulas-vermelhas">
                     <summary class="details__summary">Algumas células mudaram de cor de fundo para vermelho</summary>
-                    <p>As células do totalizador têm um tamanho para conter visivelmente 9 algarismos no máximo, isto é, mostram valores até <span class="number-format">999999999</span>. Quando uma célula recebe um número com mais de 9 algarismos, dá um alerta ficando vermelha e depois abrindo esta mensagem de texto para alertá-lo sobre a omissão dos algarismos e o real motivo.</p>
+                    <p>As células do totalizador têm um tamanho para conter visivelmente 9 algarismos no máximo, isto é, mostram valores até <span class="number-format">999999999</span>. Quando uma célula recebe um número com mais de 9 algarismos, dá um alerta ficando vermelha e abrindo esta mensagem de texto para alertá-lo sobre a omissão dos algarismos e o real motivo.</p>
 
                     <p class="artigo__p--destaque">Para um país como Moçambique, onde o número de habitantes é de pouco mais de 30 milhões (<a href="https://energypedia.info/wiki/Moçambique:_Informação_sobre_o_País" target="_blank">dados demográficos de 2019</a>), podemos presumir que nenhuma Unidade Sanitária actualmente tem um número mensal de dados de algum indicador, de qualquer que seja a sua natureza, acima de <span class="number-format">999999999</span>.</p>
                 </details>
 
-                <p class="artigo-ajuda__p--contactar-suporte">Se os tópicos acima não cobrem a sua dúvida. Pode ainda solicitar suporte por <a href="mailto:quinamine.aderitofelix@gmail.com?subject=Totalizador%20de%20Resumo%20Mensal%20de%20PRN%20II">Email</a> ou <a href="https://wa.me/258846709901/?text=Olá%2C+Quinamine!+Sobre+o+*totalizador+de+resumo+mensal+de+PRN+II*%2C+tenho+a+seguinte+dúvida%3A">WhatsApp</a>.</p>
+                <p class="artigo-ajuda__p--contactar-suporte">Se os tópicos acima não cobrem a sua dúvida. Pode ainda solicitar suporte por <a href="mailto:quinamine.aderitofelix@gmail.com?subject=Totalizador%20de%20Resumo%20Mensal%20de%20PRN%20II">Email</a> ou <a href="https://wa.me/258846709901/?text=Olá%2C+Quinamine!+Sobre+o+*totalizador+de+resumo+mensal+de+PRN+II*%2C+tenho+a+seguinte+dúvida%3A%20">WhatsApp</a>.</p>
                 <button class="artigo__btn-x artigo__btn-x--fechar-ajuda" title="Fechar">&times;</button>
             </article>
         </section>
@@ -700,7 +700,7 @@
                 </nav>
                 <p class="footer__p footer__p--created-by">
                     Criado com atenção e 💙 por <a href=https://quinamine.github.io/aderito-felix-quinamine/index.html title="Acessar biografia &raquo;">Adérito Félix Quinamine</a>
-                    | © <span class="footer__current-year"></span> - Totalizador de Resumo Mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr>
+                    | ©&nbsp;<span class="footer__current-year"></span> - Totalizador de Resumo Mensal de <abbr title="Programa de Reabilitação Nutricional para Pacientes ≥ 15 Anos">PRN II</abbr>
                 </p>
                 <a href=#root class=footer__link--back-to-top>Rolar para o topo</a>
             </div>
