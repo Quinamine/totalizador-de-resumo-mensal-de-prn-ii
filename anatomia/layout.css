@@ -29,7 +29,6 @@
     --brown: brown;
     --reference-bgc: var(--blue--light);
 
-    /* Tamanhos */
     --layout-width: 850px;
     --input-font-size: 14px;
 }
