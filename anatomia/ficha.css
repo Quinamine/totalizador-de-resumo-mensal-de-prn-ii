@@ -65,6 +65,9 @@
         background-color: var(--yt);
         z-index: 111;
     }
+    .body-com-topo-propaganda .ficha__body__header {
+        top: 36px;
+    }
 }
 .ficha__header__col-720 {
     display: grid;
