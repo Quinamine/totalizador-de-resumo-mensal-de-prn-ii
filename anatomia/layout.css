@@ -419,6 +419,9 @@
     border-top: 1px solid var(--gray--light);
     padding-top: 20px;
 }
+.artigo__titulo--no-border-t {
+    border-top: none;
+}
 .artigo__titulo--cor-discreta {
     color: var(--gray);
 }
@@ -481,9 +484,12 @@
     margin-bottom: 30px;
 }
 /* Artigo Ajuda */
+details .artigo__titulo,
+details p {
+    margin-left: 15px;
+}
 details p {
     margin-top: 10px;
-    margin-left: 15px;
 }
 .details__summary {
     padding: 10px 0;
