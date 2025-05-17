@@ -7,7 +7,7 @@ O **Totalizador de Resumo Mensal de PRN II** é um serviço online gratuito que 
 
 ## Objectivos
 
-* Auxiliar os Profissionais de Saúde na totalização do resumo mensal de PRN II com exatidão e prontidão;
+* Auxiliar os profissionais de saúde na totalização do resumo mensal de PRN II com exatidão e prontidão;
 
 * Minimizar possíveis erros de totalização (por exemplo, somar involuntariamente células não correspondentes ou registar o total da linha A, na linha B);
 
