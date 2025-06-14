@@ -64,19 +64,19 @@
         background-color: var(--yt);
         z-index: 111;
     }
-    .body-com-topo-propaganda .ficha__body__header {
+    .body-com-topo-info .ficha__body__header {
         top: 36px;
     }
 }
 .ficha__header__col-720 {
     display: grid;
     grid-template-rows: 24px 48px;
-    background-color: var(--gray--d);
+    background-color: var(--gray-d);
 }
 .ficha__header__col-110 {
     display: grid;
     align-items: center;
-    background-color: var(--gray--d);
+    background-color: var(--gray-d);
 }
 .ficha__header__linha-de-servicos {
     display: grid;
@@ -117,7 +117,7 @@
         left: -55px;
     }
     .ficha__header__titulo-indicadores {
-        background-color: var(--gray--d);
+        background-color: var(--gray-d);
     }
 }
 .ficha__grid-template-cols-1 {
@@ -136,7 +136,7 @@
     color: var(--cor-de-texto);
 }
 .--realce-padrao {
-    background-color: var(--gray--d);
+    background-color: var(--gray-d);
 }
 .ficha__rodape {
     margin: 25px auto 15px;
@@ -155,7 +155,7 @@
 /* Manipulacao com JS */
 .celula--bg-color-dark,
 .ficha__linha--destacar .celula--bg-color-dark {
-    background-color: var(--fullblack);
+    background-color: var(--black);
 }
 @media screen {
     .input--realcar-totais {
